@@ -31,13 +31,15 @@ for i in temp_list:
 # csv file
 f = open(f'{search}.csv', 'w')
 csvWriter = csv.writer(f)
-csv_list =[['가게 이름',1,2,3,4,5,'링크']]
+csv_list =[['가게 이름',1,2,3,4,5,6,7,8,9,10,'링크']]
 
 # link traversal review data save
 for it in item_list[0:3]:
     url = f'https://m.place.naver.com/restaurant/{it}/review/visitor'
     driver.get(url)
     time.sleep(0.3)
+    button = driver.find_element(by=By.XPATH,value='//*[@id="app-root"]/div/div/div/div[7]/div[2]/div[1]/div/div/div[2]/a')
+    button.click()
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
     review_list = soup.select('.nWiXa')
