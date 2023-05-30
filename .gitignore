@@ -1,4 +1,6 @@
 crawling/venv/
 crawling/project/
 crawling/.idea/
+
+.idea/
 *.csv
