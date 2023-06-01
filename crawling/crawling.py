@@ -7,38 +7,68 @@ from bs4 import BeautifulSoup
 import time
 import csv
 
-search = input('검색어를 입력하세요: ')
+
+location_list = ['홍대','연남','상수','합정']
+restaurant_list = ['한식','일식','중식','양식','분식','고깃집']
+
+# 검색어 리스트
+search_list = []
+
+# for ll in location_list:
+#     for rl in restaurant_list:
+#         search_string = ll + " " + rl
+#         search_list.append(search_string)
+
+sl_file = open('link.txt','r')
+while True:
+    temp = sl_file.readline()
+    if not temp: break
+    search_list.append(temp)
+
 
 # web driver setting
 service = Service(ChromeDriverManager().install())
 chromeOption = webdriver.ChromeOptions()
 chromeOption.add_experimental_option('detach', True)
-# chromeOption.add_argument('headless')
+chromeOption.add_argument('headless')
 driver = webdriver.Chrome(service = service, options = chromeOption)
 
-# naver map searching url
-url = f'https://m.map.naver.com/search2/search.naver?query={quote_plus(search)}&sm=hty&style=v5'
-
-driver.get(url)
-
-time.sleep(3)
 
 item_list = []
-temp_list = driver.find_elements(By.CSS_SELECTOR, '.a_item.a_item_distance._linkSiteview')
-for i in temp_list:
-    item_list.append(i.get_attribute('data-cid')) # store number
+# linktxt = open('link.txt','w')
+
+count = 0
+# # naver map searching url
+# for sl in search_list:
+#     # url = f'https://m.map.naver.com/search2/search.naver?query={quote_plus(sl)}&sm=hty&style=v5'
+#     url = sl
+#     driver.get(url)
+#
+#     time.sleep(3)
+#
+#     temp_list = driver.find_elements(By.CSS_SELECTOR, '.a_item.a_item_distance._linkSiteview')
+#     for i in temp_list:
+#         storeNumber = i.get_attribute('data-cid')
+#         item_list.append(storeNumber) # store number
+#         # linktxt.write(f'https://m.place.naver.com/restaurant/{storeNumber}/review/visitor' + '\n')
+#         # count += 1
+# # linktxt.close()
 
 # csv file
-f = open(f'{search}.csv', 'w')
+f = open('맛집.csv', 'a')
 csvWriter = csv.writer(f)
-csv_list =[['가게 이름',1,'인원 수',2,'인원 수',3,'인원 수',4,'인원 수',5,'인원 수',6,'인원 수',7,'인원 수',8,'인원 수',9,'인원 수',10,'인원 수','링크']]
-
+# csv_list =[['가게 이름',1,'인원 수',2,'인원 수',3,'인원 수',4,'인원 수',5,'인원 수',6,'인원 수',7,'인원 수',8,'인원 수',9,'인원 수',10,'인원 수','링크']]
+csv_list = []
 # link traversal review data save
-for it in item_list[0:1]:
-    url = f'https://m.place.naver.com/restaurant/{it}/review/visitor'
+for it in search_list[20:]:
+    # url = f'https://m.place.naver.com/restaurant/{it}/review/visitor'
+    url = it
+    print(count)
+    count = count + 1
+
     driver.get(url)
     time.sleep(0.3)
-    button = driver.find_element(by=By.XPATH, value='/html/body/div[3]/div/div/div/div[7]/div[2]/div[1]/div/div/div[2]/a')
+    button = driver.find_elements(by=By.CLASS_NAME,value='Tvx37')[-1]
     button.click()
     html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
@@ -56,10 +86,22 @@ for it in item_list[0:1]:
         temp.append(keywordPerson_list[i].text.strip('이 키워드를 선택한 인원'))
     temp.append(f'https://map.naver.com/v5/entry/place/{it}?c=15,0,0,0,dh')
     csv_list.append(temp)
+    if count % 10 == 0:
+        csvWriter.writerows(csv_list)
+        csv_list = []
 
 csvWriter.writerows(csv_list)
 f.close()
+# linktxt.close()
 
 driver.quit()
 # button class Tvx37
 # 인원수 class TwM9q
+# new xpath =
+# /html/body/div[3]/div/div/div/div[7]/div[2]/div[1]/div/div/div[2]/ul/li[2]/div[2]/span[2]
+# old xpath =
+# /html/body/div[3]/div/div/div/div[7]/div[2]/div[1]/div/div/div[2]/a
+# new xpath
+# //*[@id="app-root"]/div/div/div/div[7]/div[2]/div[1]/div/div/div[2]/ul/li[2]/div[2]/span[2]
+# old xpath
+#//*[@id="app-root"]/div/div/div/div[7]/div[2]/div[1]/div/div/div[2]/a
