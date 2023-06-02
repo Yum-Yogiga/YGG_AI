@@ -7,3 +7,5 @@ crawling/.idea/
 !공백제거.csv
 
 config.py
+
+__pycache__/
