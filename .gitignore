@@ -5,6 +5,9 @@ crawling/.idea/
 .idea/
 *.csv
 !공백제거.csv
+!percentage.csv
+
+*.xlsx
 
 config.py
 
