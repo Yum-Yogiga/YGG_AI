@@ -18,29 +18,29 @@ def add_want_keyword(data, keywords):
 
 
 # print(data)
+# def get_restaurant(keywords):
+#     # 저장된 파일 가져오기
+#     data = pd.read_csv('sample.csv')
+#     data = add_want_keyword(data,keywords)
+#     # cosine similarity 계산
+#     similarity_rate = cosine_similarity(data, data)
+#     # print(similarity_rate)
+#
+#     # 계산한 값으로 유사도 표를 만듦
+#     similarity_rate_df = pd.DataFrame(
+#         data=similarity_rate,
+#         index=data.index,
+#         columns=data.index
+#     )
+#
+#     # similarity_rate_df.head()
+#
+#     # 유사도 상위 5개 추천
+#     indexes = similarity_rate_df['나의식당'].sort_values(ascending=False)[:6]
+#
+#     return indexes
+
 def get_restaurant(keywords):
-    # 저장된 파일 가져오기
-    data = pd.read_csv('sample.csv')
-    data = add_want_keyword(data,keywords)
-    # cosine similarity 계산
-    similarity_rate = cosine_similarity(data, data)
-    # print(similarity_rate)
-
-    # 계산한 값으로 유사도 표를 만듦
-    similarity_rate_df = pd.DataFrame(
-        data=similarity_rate,
-        index=data.index,
-        columns=data.index
-    )
-
-    # similarity_rate_df.head()
-
-    # 유사도 상위 5개 추천
-    indexes = similarity_rate_df['나의식당'].sort_values(ascending=False)[:6]
-
-    return indexes
-
-def get_restaurant2(keywords):
     # 저장된 파일 가져오기
     data = pd.read_csv('../crawling/percentage.csv')
     data = data.drop('링크',axis=1)

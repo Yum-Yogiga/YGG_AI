@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from learning import get_restaurant, get_restaurant2
+from learning import get_restaurant
 from chat_api import chat_to_keyword
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ def root():
 
 @app.route('/model', methods=['POST'])
 def model():
-    if request.method  == 'POST':
+    if request.method == 'POST':
         params = request.get_json()
         list =['나의식당']
         for i in params['keyword']:
@@ -29,7 +29,7 @@ def chat():
     list = ['나의식당']
     for i in result:
         list.append(i)
-    result = get_restaurant2(list)
+    result = get_restaurant(list)
     result = result.to_dict()
     return jsonify(result)
 
