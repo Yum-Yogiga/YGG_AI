@@ -1,6 +1,9 @@
+import random
+
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from tabulate import tabulate
+from sklearn.cluster import KMeans
 
 
 # 표 출력
@@ -59,6 +62,28 @@ def get_restaurant(keywords):
     # similarity_rate_df.head()
 
     # 유사도 상위 5개 추천
-    indexes = similarity_rate_df['나의식당'].sort_values(ascending=False)[:6]
+    indexes = similarity_rate_df['나의식당'].sort_values(ascending=False)[1:6]
 
-    return indexes
+    return indexes.index.tolist()
+
+# KMeans algorithms
+def kmeans(keywords):
+    # 저장된 파일 가져오기
+    data = pd.read_csv('../crawling/percentage.csv')
+    data = data.drop('링크', axis=1)
+    data = data.drop('가게이름',axis=1)
+
+    # 검색 후 가게이름을 위한 데이터 재로드
+    after_data = pd.read_csv('../crawling/percentage.csv')
+
+    #kmeans
+    k = 9
+    km_model = KMeans(n_clusters=k)
+    km_model.fit(data)
+    labels = km_model.labels_
+
+    result = after_data[labels == km_model.predict([keywords])]['가게이름'].tolist()
+
+    result = random.sample(result,5)
+
+    return result
