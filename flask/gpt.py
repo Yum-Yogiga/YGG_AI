@@ -35,6 +35,7 @@ if __name__ == "__main__":
 
     # Load model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(device)
     model = GPT2LMHeadModel.from_pretrained(args.model_name).to(device)
     model.train()
 
@@ -58,7 +59,7 @@ if __name__ == "__main__":
             optimizer.step()
             scheduler.step()
 
-        print(f"epoch {epoch} loss {outputs[0].item():0.2f}")]
+        print(f"epoch {epoch} loss {outputs[0].item():0.2f}")
         # Generate examples on epoch end
         labels = ["가성비가 좋고 맛있는 곳", "친절하고 맛있고 가성비가 좋은 곳"]
         for label in labels:

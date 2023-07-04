@@ -4,7 +4,7 @@ import random
 file = open('data/data.csv', 'w', encoding='utf-8', newline='')
 csvWriter = csv.writer(file)
 
-list = [["target", "text"]]
+list = [["text", "target"]]
 
 # target = [a,b,c,d,e,f,g,h,i]
 # a 음식이 맛있어요
@@ -40,6 +40,6 @@ for i in range(10000):
     target_list[data_range[len(data_range)-1]] = 1
     text_list = text_list + text_set[data_range[-1]][1]
 
-    list.append([target_list,text_list])
+    list.append([text_list, target_list])
 
 csvWriter.writerows(list)
