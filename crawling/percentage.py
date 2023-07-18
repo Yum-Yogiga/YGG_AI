@@ -1,8 +1,8 @@
 import csv
 
 # file setting
-input = open('output2.csv','r',encoding='utf-8')
-output = open('output3.csv','w',encoding='utf-8',newline='')
+input = open('test3.csv','r',encoding='utf-8')
+output = open('test4.csv','w',encoding='utf-8',newline='')
 
 # csv reader/writer setting
 csvReader = csv.reader(input)

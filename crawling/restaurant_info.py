@@ -26,7 +26,6 @@ driver = webdriver.Chrome(service=service, options=chromeOption)
 
 # 요소 존재 확인
 def check_exists(class_name):
-    print(class_name)
     try:
         driver.find_element(by=By.CLASS_NAME, value=class_name)
     except NoSuchElementException:
@@ -46,6 +45,9 @@ def check_exists(class_name):
 # MENyI # 메뉴이름
 # gl2cc # 메뉴 가격
 
+# ihmWt # 메뉴이름2
+# awlpp # 메뉴가격2
+
 def crawl(i_url):
     urls = i_url
     rest_list = []
@@ -62,15 +64,30 @@ def crawl(i_url):
         open_time = ""
         menus = []
 
-        name = soup.select('.Fc1rA')[0].text
+        if check_exists('Fc1rA'):
+            name = soup.select('.Fc1rA')[0].text
+        if check_exists('LDgIH'):
+            address = soup.select('.LDgIH')[0].text
+        if check_exists('xlx7Q'):
+            tele = soup.select('.xlx7Q')[0].text
+        # if check_exists('w9QyJ'):
+        #     if check_exists('_UCia'):
+        #         button = driver.find_elements(by=By.CLASS_NAME, value='w9QyJ')[0]
+        #         button.click()
+        #         html = driver.page_source
+        #         soup = BeautifulSoup(html, 'html.parser')
+        #
+        #     open_time = soup.select('time')[0].text
 
-        address = soup.select('.LDgIH')[0].text
+        if check_exists('MENyI'):
+            menu_names = soup.select('.MENyI')
+        else:
+            menu_names = soup.select('.ihmWt')
+        if check_exists('gl2cc'):
+            menu_price = soup.select('.gl2cc')
+        else:
+            menu_price = soup.select('.awlpp')
 
-        tele = soup.select('.xlx7Q')[0].text
-        open_time = soup.select('time')[0].text
-
-        menu_names = soup.select('.MENyI')
-        menu_price = soup.select('.gl2cc')
         menunames = []
         menuprice = []
 
@@ -82,8 +99,8 @@ def crawl(i_url):
         rest = {
             "name": name,
             "address": address,
-            "tel": tele,
-            "openingHours": open_time
+            "tel": tele
+            # "openingHours": open_time
         }
 
         menu = dict(zip(menunames, menuprice))
@@ -99,3 +116,4 @@ def crawl(i_url):
     driver.quit()
 
     return rest_list
+

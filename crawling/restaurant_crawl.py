@@ -3,12 +3,14 @@ import csv
 
 search_list = set()
 
-sl_file = open('link.txt','r')
+sl_file = open('storeNumber.txt','r',encoding='utf-8')
+
 while True:
     temp = sl_file.readline()
-    temp = temp.replace('review/visitor', 'home')
     if not temp: break
+    temp = f'https://m.place.naver.com/restaurant/{temp}/home'
     search_list.add(temp)
+
 
 sl_file.close()
 
@@ -25,9 +27,10 @@ print(dict_list)
 
 with open('restaurant_crawling.csv','w',encoding='utf-8',newline='') as f:
     w = csv.writer(f)
-    csv_list = [['name','address','tel','openingHours','menu1','price','menu2','price','menu3','price','menu4','price']]
+    # 추후에 필요시 tel 과 menu1 사이에 ,'openingHours' 추가
+    csv_list = [['name','address','tel','menu1','price','menu2','price','menu3','price','menu4','price']]
     for dict in dict_list:
-        templist = [dict['name'],dict['address'],dict['tel'],dict['openingHours']]
+        templist = [dict['name'],dict['address'],dict['tel']]
         keys = list(dict['menuDtoList'].keys())
         values = list(dict['menuDtoList'].values())
         for i in range(len(keys)):
