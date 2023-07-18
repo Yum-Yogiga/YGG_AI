@@ -12,3 +12,7 @@ crawling/.idea/
 config.py
 
 __pycache__/
+
+*.spec
+dist/
+build/
