@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from learning import get_restaurant
 from chat_api import chat_to_keyword
-from crawl import crawl
+from crawl import crawling
 
 app = Flask(__name__)
 
@@ -35,11 +35,11 @@ def chat():
     return jsonify(result)
 
 @app.route('/crawl', methods=['POST'])
-def chat():
+def crawl():
     if request.method == 'POST':
         params = request.get_json()
         urls = params['urls']
-        result = crawl(urls)
+        result = crawling(urls)
 
     return jsonify(result)
 

@@ -48,8 +48,9 @@ def check_exists(class_name):
 # ihmWt # 메뉴이름2
 # awlpp # 메뉴가격2
 
-def crawl(i_url):
+def crawling(i_url):
     urls = i_url
+    print(i_url)
     rest_list = []
     for url in urls:
         print(url)
@@ -70,14 +71,14 @@ def crawl(i_url):
             address = soup.select('.LDgIH')[0].text
         if check_exists('xlx7Q'):
             tele = soup.select('.xlx7Q')[0].text
-        if check_exists('w9QyJ'):
-            if check_exists('_UCia'):
-                button = driver.find_elements(by=By.CLASS_NAME, value='w9QyJ')[0]
-                button.click()
-                html = driver.page_source
-                soup = BeautifulSoup(html, 'html.parser')
-
-            open_time = soup.select('time')[0].text
+        # if check_exists('w9QyJ'):
+        #     if check_exists('_UCia'):
+        #         button = driver.find_elements(by=By.CLASS_NAME, value='w9QyJ')[0]
+        #         button.click()
+        #         html = driver.page_source
+        #         soup = BeautifulSoup(html, 'html.parser')
+        #
+        #     open_time = soup.select('time')[0].text
 
         if check_exists('MENyI'):
             menu_names = soup.select('.MENyI')
