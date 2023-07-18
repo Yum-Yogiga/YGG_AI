@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from learning import get_restaurant
 from chat_api import chat_to_keyword
+from crawl import crawl
 
 app = Flask(__name__)
 
@@ -31,6 +32,15 @@ def chat():
         list.append(i)
     result = get_restaurant(list)
     result = result.to_dict()
+    return jsonify(result)
+
+@app.route('/crawl', methods=['POST'])
+def chat():
+    if request.method == 'POST':
+        params = request.get_json()
+        urls = params['urls']
+        result = crawl(urls)
+
     return jsonify(result)
 
 app.run(debug=True)
