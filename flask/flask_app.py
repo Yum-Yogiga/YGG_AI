@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from learning import get_restaurant
+from learning import get_restaurant,kmeans
 from chat_api import chat_to_keyword
 from crawl import crawling
 
@@ -17,7 +17,7 @@ def model():
         for i in params['keyword']:
             list.append(i)
         result = get_restaurant(list)
-        result = result.to_dict()
+        # result = result.to_dict()
 
     return jsonify(result)
 
@@ -31,7 +31,19 @@ def chat():
     for i in result:
         list.append(i)
     result = get_restaurant(list)
-    result = result.to_dict()
+    # result = result.to_dict()
+    return jsonify(result)
+
+@app.route('/k_means',methods=['POST'])
+def k_means():
+    if request.method == 'POST':
+        params = request.get_json()
+        list = []
+        for i in params['keyword']:
+            list.append(i)
+        result = kmeans(list)
+        # result = result.to_dict()
+
     return jsonify(result)
 
 @app.route('/crawl', methods=['POST'])
