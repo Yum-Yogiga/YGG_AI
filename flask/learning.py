@@ -46,8 +46,7 @@ def add_want_keyword(data, keywords):
 
 def get_restaurant(keywords):
     # 저장된 파일 가져오기
-    data = pd.read_csv('../crawling/percentage.csv')
-    data = data.drop('링크',axis=1)
+    data,f = file_system()
     data = add_want_keyword(data,keywords)
     # cosine similarity 계산
     similarity_rate = cosine_similarity(data, data)
@@ -70,13 +69,14 @@ def get_restaurant(keywords):
 def file_system():
     f = pd.read_csv('./data/total.csv')
     # 음식이 맛있어요	친절해요	특별한 메뉴가 있어요	매장이 청결해요	재료가 신선해요	가성비가 좋아요	양이 많아요	인테리어가 멋져요	혼밥하기 좋아요
-    data = f[['음식이 맛있어요','친절해요', '특별한 메뉴가 있어요','매장이 청결해요','재료가 신선해요', '가성비가 좋아요',	'양이 많아요',	'인테리어가 멋져요',	'혼밥하기 좋아요']]
+    data = f[['가게이름','음식이 맛있어요','친절해요', '특별한 메뉴가 있어요','매장이 청결해요','재료가 신선해요', '가성비가 좋아요',	'양이 많아요',	'인테리어가 멋져요',	'혼밥하기 좋아요']]
     return data,f
 
 # KMeans algorithms
 def kmeans(keywords):
     # 저장된 파일 가져오기
     data, after_data = file_system()
+    data.drop('가게이름',axis=1)
     #kmeans
     k = 9
     km_model = KMeans(n_clusters=k)
