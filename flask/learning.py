@@ -77,7 +77,8 @@ def file_system():
 def kmeans(keywords):
     # 저장된 파일 가져오기
     data, after_data = file_system()
-    data.drop('가게이름',axis=1)
+    data = data.drop(labels='가게이름',axis=1)
+
     #kmeans
     k = 9
     km_model = KMeans(n_clusters=k)
