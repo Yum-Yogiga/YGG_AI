@@ -15,6 +15,7 @@ def print_df(df):
 # 검색할 값 추가하기.
 def add_want_keyword(data, keywords):
     data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+    # data = pd.concat([data, pd.Series(keywords, index=data.columns)])
 
     # index를 보기 편하게 미리 지정한 idx로 바꿈. 추후에 idx가 식당 이름이 될 것으로 예상
     data = data.set_index(keys=['가게이름'],drop=True)
@@ -85,6 +86,7 @@ def kmeans(keywords):
 
     print(np.bincount(labels))
     print(km_model.predict([keywords]))
+    print(km_model.cluster_centers_[km_model.predict([keywords])])
 
     result = after_data[labels == km_model.predict([keywords])]['가게이름'].tolist()
 
