@@ -5,7 +5,11 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from tabulate import tabulate
 from sklearn.cluster import KMeans
+import scipy as sp
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+plt.rcParams['font.family'] = 'Malgun Gothic'
 
 # 표 출력
 def print_df(df):
@@ -94,3 +98,27 @@ def kmeans(keywords):
     result = random.sample(result,5)
 
     return result
+
+def ploting():
+    # 저장된 파일 가져오기
+    data, after_data = file_system()
+    data = data.drop(labels='가게이름',axis=1)
+
+    #kmeans
+    k = 9
+    km_model = KMeans(n_clusters=k)
+    km_model.fit(data)
+
+    resultBySklearn = data.copy()
+    resultBySklearn["cluster"] = km_model.labels_
+
+    centers = km_model.cluster_centers_
+    print(centers)
+
+    sns.set_palette("Set2")
+    SP = sns.scatterplot(x="음식이 맛있어요", y="친절해요", data=resultBySklearn, hue="cluster")
+
+    sns.scatterplot(x=centers[0],y=centers[1])
+    save_fig = SP.get_figure()
+    save_fig.savefig("output.png")
+    plt.show()
