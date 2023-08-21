@@ -1,0 +1,1554 @@
+ * Serving Flask app 'flask_app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.9.216:5000
+Press CTRL+C to quit
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET /swagger.json HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:33:48] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [07/Aug/2023 07:33:53] "POST /model/cosine HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[144 102 118 137 123 149  85 121  75]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[2]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.46422881 0.14916102 0.07134746 0.03976271 0.08064407 0.09101695
+  0.06865254 0.01161017 0.02360169]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+1.243.213.183 - - [07/Aug/2023 07:34:04] "POST /model/k_means HTTP/1.1" 200 -
+ * Serving Flask app 'flask_app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.9.216:5000
+Press CTRL+C to quit
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:40:25] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [07/Aug/2023 07:40:30] "POST /model/cosine HTTP/1.1" 200 -
+27.0.238.181 - - [07/Aug/2023 07:41:41] "GET / HTTP/1.1" 200 -
+27.0.238.118 - - [07/Aug/2023 07:41:41] "GET / HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [07/Aug/2023 07:42:06] "POST /model/cosine HTTP/1.1" 200 -
+['https://m.place.naver.com/restaurant/1568802813/home']
+https://m.place.naver.com/restaurant/1568802813/home
+{'name': '미야비 하나레', 'address': '서울 마포구 월드컵로3길 31-7 2층', 'tel': '0507-1323-5572', 'menuDtoList': {'캐주얼 가이세키 코스': '78,000원', '사케 오마카세': '30,000원'}}
+1.243.213.183 - - [07/Aug/2023 07:42:22] "POST /model/crawl HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [07/Aug/2023 07:48:06] "POST /model/cosine HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET /swagger.json HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 07:48:47] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swagger.json HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 07:56:28] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 08:20:55] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 08:20:55] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 08:20:55] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 08:20:55] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 08:20:55] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 08:20:56] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [07/Aug/2023 08:21:11] "POST /model/cosine HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[122  88 129 105 125 122 119 143 101]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[3]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47399048 0.15064762 0.07366667 0.04067619 0.07987619 0.08266667
+  0.06331429 0.01392381 0.02124762]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+1.243.213.183 - - [07/Aug/2023 08:21:19] "POST /model/k_means HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+14.39.248.150 - - [07/Aug/2023 10:09:31] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+14.39.248.150 - - [07/Aug/2023 10:10:02] "POST /model/cosine HTTP/1.1" 200 -
+['string']
+string
+[2023-08-07 10:10:13,372] ERROR in app: Exception on /model/crawl [POST]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.10/http/client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.10/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.10/http/client.py", line 976, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f9213598a00>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/ubuntu/yggai/YGG_AI/flask/flask_app.py", line 75, in post
+    result = crawling(urls)
+  File "/home/ubuntu/yggai/YGG_AI/flask/crawl.py", line 57, in crawling
+    driver.get(url)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in get
+    self.execute(Command.GET, {"url": url})
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 343, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/selenium/webdriver/remote/remote_connection.py", line 291, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/selenium/webdriver/remote/remote_connection.py", line 312, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/poolmanager.py", line 375, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 783, in urlopen
+    return self.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=33065): Max retries exceeded with url: /session/1aff620526fcab68f97a7f0c6ede9c20/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9213598a00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+14.39.248.150 - - [07/Aug/2023 10:10:13] "POST /model/crawl HTTP/1.1" 500 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[126 147  85  94 119 129 121 131 102]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[8]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47264706 0.14956863 0.07007843 0.04052941 0.08298039 0.083
+  0.06684314 0.0114902  0.02287255]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [07/Aug/2023 10:10:30] "POST /model/k_means HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 10:12:49] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 10:12:49] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+14.39.248.150 - - [07/Aug/2023 10:12:49] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+14.39.248.150 - - [07/Aug/2023 10:12:49] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 10:12:50] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [07/Aug/2023 10:12:50] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+14.39.248.150 - - [07/Aug/2023 10:12:50] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+14.39.248.150 - - [07/Aug/2023 10:12:50] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 12:30:34] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [07/Aug/2023 12:30:34] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 12:30:34] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 12:30:34] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 12:30:34] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+1.243.213.183 - - [07/Aug/2023 12:30:34] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [07/Aug/2023 12:30:40] "POST /model/cosine HTTP/1.1" 200 -
+128.199.169.145 - - [07/Aug/2023 12:31:25] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03HD\x16H¤çGEMD')
+128.199.169.145 - - [07/Aug/2023 12:31:25] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03HD\x16H¤çGEMD" HTTPStatus.BAD_REQUEST -
+128.199.169.145 - - [07/Aug/2023 12:31:25] code 400, message Bad request version ('À\x14À')
+128.199.169.145 - - [07/Aug/2023 12:31:25] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ç\x08í}TÕj\x89Õ\\õY~ÓØà2\x0d7P\x0eí0À©®\x06É"_\x9a\\\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+128.199.169.145 - - [07/Aug/2023 12:31:25] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [07/Aug/2023 18:22:36] code 400, message Bad request version ('À\x14À')
+162.142.125.226 - - [07/Aug/2023 18:22:36] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03;\x88i\x87ï@\x09º\x0b\x9e\x9e\x90\x1a\x0d\x17\x7f¸Ñ\x16¢Ny\\Óø\x0dte*\x9dé\x1b ì&óþ9çJ2\x13\x1a`\x85qZøHyÒ\x03þà²]Ô\x90£­Ï¢eKÎ\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.226 - - [07/Aug/2023 18:22:37] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [07/Aug/2023 18:22:37] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [07/Aug/2023 18:22:38] code 505, message Invalid HTTP version (2.0)
+162.142.125.226 - - [07/Aug/2023 18:22:38] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.226 - - [07/Aug/2023 18:22:38] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.226 - - [07/Aug/2023 18:22:38] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.226 - - [07/Aug/2023 18:22:39] "GET /favicon.ico HTTP/1.1" 404 -
+198.235.24.44 - - [07/Aug/2023 19:22:19] "GET / HTTP/1.0" 200 -
+198.235.24.5 - - [07/Aug/2023 20:22:54] "GET / HTTP/1.1" 200 -
+162.216.149.197 - - [07/Aug/2023 20:56:23] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03-£oaP\x8f¶ÈBóJï¦LEm\x90O:x-\x19.'Mã{\x88\x15Q\x98^\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+162.216.149.197 - - [07/Aug/2023 20:56:23] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03-£oaP\x8f¶ÈBóJï¦LEm\x90O:x-\x19.'Mã{\x88\x15Q\x98^\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.146.53 - - [07/Aug/2023 21:25:26] code 400, message Bad request version ('À\x14À')
+167.94.146.53 - - [07/Aug/2023 21:25:26] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03>ª"¬Ð\x86¼Ò<\x9düEÔóÊV%éá´\x15ØØ<£\x1b\x03D\x9f\x82ò\x84 Mðö\x8a\x95@1¡ÆÔR\x9duÍ¥\x97Ö÷Y"\x14Q\x8eûEdfyÖ\x92Ê¬\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.146.53 - - [07/Aug/2023 21:25:28] "GET / HTTP/1.1" 200 -
+167.94.146.53 - - [07/Aug/2023 21:25:28] "GET / HTTP/1.1" 200 -
+167.94.146.53 - - [07/Aug/2023 21:25:29] code 505, message Invalid HTTP version (2.0)
+167.94.146.53 - - [07/Aug/2023 21:25:29] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.146.53 - - [07/Aug/2023 21:25:30] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.146.53 - - [07/Aug/2023 21:25:30] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.146.53 - - [07/Aug/2023 21:25:31] "GET /favicon.ico HTTP/1.1" 404 -
+192.155.90.118 - - [07/Aug/2023 23:42:48] code 400, message Bad request version ('Ç[1')
+192.155.90.118 - - [07/Aug/2023 23:42:48] "\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x03 Ç[1" HTTPStatus.BAD_REQUEST -
+192.155.88.231 - - [07/Aug/2023 23:46:54] "GET / HTTP/1.1" 200 -
+45.79.181.223 - - [07/Aug/2023 23:47:14] "GET / HTTP/1.1" 200 -
+205.210.31.17 - - [08/Aug/2023 00:41:28] "GET / HTTP/1.0" 200 -
+162.142.125.224 - - [08/Aug/2023 05:41:47] code 400, message Bad request version ('À\x14À')
+162.142.125.224 - - [08/Aug/2023 05:41:47] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03@\x87ü¤Ö\x01 fa%\x99÷_\x8eT\x12ÆÇkHÙB¨&Z&tJý\x06\x14û Ï]¨NhA°L`*¤ýF\x0eé\x17á\x11Í\x8fj\x9e\x8fCpCi&\x91N£Ê\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.224 - - [08/Aug/2023 05:41:49] "GET / HTTP/1.1" 200 -
+162.142.125.224 - - [08/Aug/2023 05:41:49] "GET / HTTP/1.1" 200 -
+162.142.125.224 - - [08/Aug/2023 05:41:50] code 505, message Invalid HTTP version (2.0)
+162.142.125.224 - - [08/Aug/2023 05:41:50] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.224 - - [08/Aug/2023 05:41:50] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.224 - - [08/Aug/2023 05:41:50] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.224 - - [08/Aug/2023 05:41:51] "GET /favicon.ico HTTP/1.1" 404 -
+198.235.24.230 - - [08/Aug/2023 07:42:33] "GET / HTTP/1.1" 200 -
+89.248.165.239 - - [08/Aug/2023 07:58:44] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+89.248.165.239 - - [08/Aug/2023 07:58:44] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+142.93.64.15 - - [08/Aug/2023 08:13:57] code 400, message Bad request version ('À\x13À')
+142.93.64.15 - - [08/Aug/2023 08:13:57] "\x16\x03\x01\x00ê\x01\x00\x00æ\x03\x03Î\x95\x16\x95k\x82\x91Ý\x906ID:\x96x©Æ`­çþøèÊÑ\x0eEÅÎ»Lx C÷Ey\x15ø\x93óô÷± Zâ\x81HìÀ::å"\x03¢m\x97íçWv\x9fÞ\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+142.93.64.15 - - [08/Aug/2023 08:13:57] "GET / HTTP/1.1" 200 -
+142.93.64.15 - - [08/Aug/2023 08:13:58] "GET / HTTP/1.1" 200 -
+142.93.64.15 - - [08/Aug/2023 08:13:58] "GET /.vscode/sftp.json HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:13:58] "GET /about HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:13:59] "GET /debug/default/view?panel=config HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:13:59] "GET /v2/_catalog HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:00] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:00] "GET /server-status HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:00] "GET /login.action HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:01] "GET /_all_dbs HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:01] "GET /.DS_Store HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:02] "GET /.env HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:02] "GET /.git/config HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:03] "GET /s/33e28313e2432313e23313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:03] "GET /config.json HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:03] "GET /telescope/requests HTTP/1.1" 404 -
+142.93.64.15 - - [08/Aug/2023 08:14:04] "GET /?rest_route=/wp/v2/users/ HTTP/1.1" 200 -
+89.248.163.119 - - [08/Aug/2023 08:33:37] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+89.248.163.119 - - [08/Aug/2023 08:33:37] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+152.89.198.113 - - [08/Aug/2023 09:23:02] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+152.89.198.113 - - [08/Aug/2023 09:23:02] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+45.130.105.92 - - [08/Aug/2023 15:16:34] "GET /v2/ HTTP/1.0" 404 -
+152.32.241.234 - - [08/Aug/2023 19:59:32] code 400, message Bad request version ('À\x14À')
+152.32.241.234 - - [08/Aug/2023 19:59:32] "\x16\x03\x01\x01\x09\x01\x00\x01\x05\x03\x03Þ\x98ØÚ\x97\x1at\x83\x96Éäø\x11Í\x94/IÚôL[;>BRÿtò¾\x00£ÿ ~´ÆK\x1dÔ\x08¨dI\x93n*a\x84Ä\x9b\x05Ý\x9eå\x95~`\x83¾\x14p,H´\x1c\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+152.32.241.234 - - [08/Aug/2023 19:59:42] "GET / HTTP/1.1" 200 -
+152.32.241.234 - - [08/Aug/2023 19:59:42] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+152.32.241.234 - - [08/Aug/2023 19:59:43] "GET /robots.txt HTTP/1.1" 404 -
+152.32.241.234 - - [08/Aug/2023 19:59:43] "GET /sitemap.xml HTTP/1.1" 404 -
+152.32.241.234 - - [08/Aug/2023 19:59:43] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+152.32.241.234 - - [08/Aug/2023 19:59:43] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+205.210.31.144 - - [08/Aug/2023 20:30:10] "GET / HTTP/1.1" 200 -
+162.216.150.103 - - [09/Aug/2023 00:07:27] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ß¯Ä\x0e')
+162.216.150.103 - - [09/Aug/2023 00:07:27] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ß¯Ä\x0e" HTTPStatus.BAD_REQUEST -
+45.79.181.251 - - [09/Aug/2023 00:22:53] code 400, message Bad request version ('À\x14À')
+45.79.181.251 - - [09/Aug/2023 00:22:53] "\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x036'Ù>ÀíÁ\x04½õ\x9dÍ\x11ZdÃúü×¬Ì\x84O\x04[\x87 Â"Ø\x93ç\x00\x00 À/À0À+À,Ì¨Ì©À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+27.0.238.118 - - [09/Aug/2023 01:15:48] "GET / HTTP/1.1" 200 -
+185.229.59.60 - - [09/Aug/2023 03:31:14] "GET /v2/ HTTP/1.0" 404 -
+198.235.24.156 - - [09/Aug/2023 05:42:44] "GET / HTTP/1.1" 200 -
+198.235.24.148 - - [09/Aug/2023 06:31:57] "GET / HTTP/1.0" 200 -
+205.210.31.155 - - [09/Aug/2023 07:43:58] "GET / HTTP/1.0" 200 -
+193.29.13.175 - - [09/Aug/2023 08:50:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+193.29.13.175 - - [09/Aug/2023 08:50:46] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+162.142.125.226 - - [09/Aug/2023 10:52:49] code 400, message Bad request version ('À\x14À')
+162.142.125.226 - - [09/Aug/2023 10:52:49] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03k'¢\x9e³WùB½\x80_2Çvr\x09\x16Ü5\x8cÏ°;-ú\x85\x9bD12êú N Ù)\x14`\x9d¥í¬/Ü\x1bkl\x85UÈ Å;üÝ\x84<Ek\x018Âñ:\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.226 - - [09/Aug/2023 10:52:50] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 10:52:51] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 10:52:51] code 505, message Invalid HTTP version (2.0)
+162.142.125.226 - - [09/Aug/2023 10:52:51] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.226 - - [09/Aug/2023 10:52:51] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 10:52:52] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 10:52:52] "GET /favicon.ico HTTP/1.1" 404 -
+167.94.145.59 - - [09/Aug/2023 11:57:58] code 400, message Bad request version ('À\x14À')
+167.94.145.59 - - [09/Aug/2023 11:57:58] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x82¸àéë\x84¸©(Ø`¤}jYAy#Ó<\x0cHÓüÀäñVSãVx |\x10Â\x91]\x8a\x0e\x0fóùbõU|\x04x½TÊ/\x0dÈ\x1cé|á\x8aVh\x06¹Î\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.145.59 - - [09/Aug/2023 11:58:00] "GET / HTTP/1.1" 200 -
+167.94.145.59 - - [09/Aug/2023 11:58:00] "GET / HTTP/1.1" 200 -
+167.94.145.59 - - [09/Aug/2023 11:58:01] code 505, message Invalid HTTP version (2.0)
+167.94.145.59 - - [09/Aug/2023 11:58:01] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.59 - - [09/Aug/2023 11:58:01] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.145.59 - - [09/Aug/2023 11:58:02] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.145.59 - - [09/Aug/2023 11:58:02] "GET /favicon.ico HTTP/1.1" 404 -
+162.142.125.226 - - [09/Aug/2023 12:17:14] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÐO,\x83-7Ux\x8dJ\\h\x81²\x08à_y8=>\x95')
+162.142.125.226 - - [09/Aug/2023 12:17:14] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÐO,\x83-7Ux\x8dJ\\h\x81²\x08à_y8=>\x95" HTTPStatus.BAD_REQUEST -
+162.142.125.226 - - [09/Aug/2023 12:17:15] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 12:17:15] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 12:17:16] code 505, message Invalid HTTP version (2.0)
+162.142.125.226 - - [09/Aug/2023 12:17:16] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.226 - - [09/Aug/2023 12:17:16] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 12:17:16] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.226 - - [09/Aug/2023 12:17:16] "GET /favicon.ico HTTP/1.1" 404 -
+45.84.139.204 - - [09/Aug/2023 12:27:25] "GET /v2/ HTTP/1.0" 404 -
+185.170.144.3 - - [09/Aug/2023 13:33:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.170.144.3 - - [09/Aug/2023 13:33:51] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+167.94.138.36 - - [09/Aug/2023 15:08:40] code 400, message Bad request version ('À\x14À')
+167.94.138.36 - - [09/Aug/2023 15:08:40] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03jÒ&\x95Ìû\x8aÿ\x1d\x8b¡´#®\x14\x02Ä\x05¿½ø\x17«àGøR\x9c\x11m8~ û\x18p\x10½\x0büj«\x90³.\x1a\x7fp\x9aë\x1cþ'?\x0cwãN^\x07\x0fêËÎ\\\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.138.36 - - [09/Aug/2023 15:08:41] "GET / HTTP/1.1" 200 -
+167.94.138.36 - - [09/Aug/2023 15:08:41] "GET / HTTP/1.1" 200 -
+167.94.138.36 - - [09/Aug/2023 15:08:42] code 505, message Invalid HTTP version (2.0)
+167.94.138.36 - - [09/Aug/2023 15:08:42] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.36 - - [09/Aug/2023 15:08:42] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.138.36 - - [09/Aug/2023 15:08:42] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.138.36 - - [09/Aug/2023 15:08:43] "GET /favicon.ico HTTP/1.1" 404 -
+34.222.76.93 - - [09/Aug/2023 16:32:13] "GET / HTTP/1.1" 200 -
+45.135.232.28 - - [09/Aug/2023 17:34:02] code 400, message Bad HTTP/0.9 request type ('\x12\x01\x00^\x00\x00\x01\x00\x00\x00$\x00\x06\x01\x00*\x00\x01\x02\x00+\x00\x01\x03\x00,\x00\x04\x04\x000\x00\x01\x05\x001\x00$\x06\x00U\x00\x01ÿ\x04\x07')
+45.135.232.28 - - [09/Aug/2023 17:34:02] "\x12\x01\x00^\x00\x00\x01\x00\x00\x00$\x00\x06\x01\x00*\x00\x01\x02\x00+\x00\x01\x03\x00,\x00\x04\x04\x000\x00\x01\x05\x001\x00$\x06\x00U\x00\x01ÿ\x04\x07\x0c¼\x00\x00\x00\x00\x00\x00\x15Ð\x00pøáz" HTTPStatus.BAD_REQUEST -
+198.235.24.16 - - [09/Aug/2023 20:39:41] "GET / HTTP/1.1" 200 -
+167.94.145.57 - - [09/Aug/2023 21:11:10] code 400, message Bad request version ('À\x14À')
+167.94.145.57 - - [09/Aug/2023 21:11:10] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Í3\x8dö²b\x81Ù÷\x86&|6+UãXï\x86E\x07¥SØ\x09\x0bXÀçmJ\x83 ÁK®An\x1aÎ]®\x05/­b\x1c{¶ôkã\x91kaì&ÏøKaã«üÏ\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.145.57 - - [09/Aug/2023 21:11:12] "GET / HTTP/1.1" 200 -
+167.94.145.57 - - [09/Aug/2023 21:11:12] "GET / HTTP/1.1" 200 -
+167.94.145.57 - - [09/Aug/2023 21:11:13] code 505, message Invalid HTTP version (2.0)
+167.94.145.57 - - [09/Aug/2023 21:11:13] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.57 - - [09/Aug/2023 21:11:13] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.145.57 - - [09/Aug/2023 21:11:14] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.145.57 - - [09/Aug/2023 21:11:14] "GET /favicon.ico HTTP/1.1" 404 -
+198.199.92.73 - - [09/Aug/2023 21:19:30] "GET /v2/ HTTP/1.1" 404 -
+198.235.24.142 - - [09/Aug/2023 22:37:47] "GET / HTTP/1.0" 200 -
+167.248.133.34 - - [09/Aug/2023 22:55:32] code 400, message Bad request version ('À\x14À')
+167.248.133.34 - - [09/Aug/2023 22:55:32] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03.ÌÎÓ4\x82\\\x0c(Hü¥Æ+`VìÈêºÝ}\x9bÐ\x02Eý÷\x00ÁpB \x94%\x08v\x9a·]|\x09\x13=\x01°ß#³UÂÞ#¾\x05n§³Ïo@\x84\x11Î\x9c\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.248.133.34 - - [09/Aug/2023 22:55:34] "GET / HTTP/1.1" 200 -
+167.248.133.34 - - [09/Aug/2023 22:55:34] "GET / HTTP/1.1" 200 -
+167.248.133.34 - - [09/Aug/2023 22:55:34] code 505, message Invalid HTTP version (2.0)
+167.248.133.34 - - [09/Aug/2023 22:55:34] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.248.133.34 - - [09/Aug/2023 22:55:35] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.248.133.34 - - [09/Aug/2023 22:55:35] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.248.133.34 - - [09/Aug/2023 22:55:35] "GET /favicon.ico HTTP/1.1" 404 -
+162.216.149.254 - - [09/Aug/2023 23:19:27] code 400, message Bad request version ('À(À$À\x14À')
+162.216.149.254 - - [09/Aug/2023 23:19:27] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03|\x0bk¬\x1e>\x06\x9d±\x93\x89\x98\x8c\\D8\x032\x16(Ë\x1b\x0bÝ½\x82'\x86$zÀ.\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+45.79.181.94 - - [09/Aug/2023 23:38:04] code 400, message Bad request version ('À\x14À')
+45.79.181.94 - - [09/Aug/2023 23:38:04] "\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x03(\x9bf¤F¿¶îFo¨h¹\x86ù<\x1d\x1bÞ9%\x85üÎ.Ð4×Iw6Ê\x00\x00 À/À0À+À,Ì¨Ì©À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+192.155.90.220 - - [10/Aug/2023 00:35:48] "GET / HTTP/1.1" 200 -
+104.219.232.122 - - [10/Aug/2023 05:27:49] "GET /v2/_catalog HTTP/1.1" 404 -
+1.243.213.183 - - [10/Aug/2023 07:10:37] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET /favicon.ico HTTP/1.1" 404 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 07:10:38] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [10/Aug/2023 07:10:43] "POST /model/cosine HTTP/1.1" 200 -
+198.235.24.134 - - [10/Aug/2023 07:54:49] "GET / HTTP/1.0" 200 -
+27.0.238.181 - - [10/Aug/2023 09:08:03] "GET / HTTP/1.1" 200 -
+211.231.103.94 - - [10/Aug/2023 09:08:03] "GET / HTTP/1.1" 200 -
+211.231.103.94 - - [10/Aug/2023 09:08:03] "GET / HTTP/1.1" 200 -
+27.0.238.181 - - [10/Aug/2023 09:08:03] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 09:08:11] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 09:08:11] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 09:08:11] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 09:08:11] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 09:08:11] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 09:08:11] "GET /swagger.json HTTP/1.1" 200 -
+221.139.53.99 - - [10/Aug/2023 09:55:40] "GET / HTTP/1.1" 200 -
+221.139.53.99 - - [10/Aug/2023 09:55:40] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+221.139.53.99 - - [10/Aug/2023 09:55:40] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+221.139.53.99 - - [10/Aug/2023 09:55:40] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+221.139.53.99 - - [10/Aug/2023 09:55:40] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+103.123.134.35 - - [10/Aug/2023 10:02:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00®\x01\x00\x00ª\x03\x03¬¾\x9d¡,f\x10\x1bQÊ3\x92Û¥×\x99.W*h\x7fÍ\x08²D²Îga\x84òÍ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+103.123.134.35 - - [10/Aug/2023 10:02:25] "\x16\x03\x01\x00®\x01\x00\x00ª\x03\x03¬¾\x9d¡,f\x10\x1bQÊ3\x92Û¥×\x99.W*h\x7fÍ\x08²D²Îga\x84òÍ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+103.123.134.35 - - [10/Aug/2023 10:02:52] code 400, message Bad request version ('0.12\x00')
+103.123.134.35 - - [10/Aug/2023 10:02:52] "\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00" HTTPStatus.BAD_REQUEST -
+103.123.134.35 - - [10/Aug/2023 10:03:03] code 400, message Bad HTTP/0.9 request type ('\x00')
+103.123.134.35 - - [10/Aug/2023 10:03:03] "\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03" HTTPStatus.BAD_REQUEST -
+103.123.134.35 - - [10/Aug/2023 10:03:03] "GET / HTTP/1.1" 200 -
+103.123.134.35 - - [10/Aug/2023 10:03:10] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+103.123.134.35 - - [10/Aug/2023 10:03:14] "GET /robots.txt HTTP/1.1" 404 -
+103.123.134.35 - - [10/Aug/2023 10:03:16] "GET /sitemap.xml HTTP/1.1" 404 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET / HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET /swagger.json HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 12:29:22] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:11] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:11] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:11] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:11] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:11] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:11] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [10/Aug/2023 14:49:15] "POST /model/cosine HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 14:49:26] "GET / HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 14:49:26] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 14:49:26] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+211.34.171.178 - - [10/Aug/2023 14:49:26] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 14:49:26] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+211.34.171.178 - - [10/Aug/2023 14:49:27] "GET /swagger.json HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:27] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:49:27] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+1.243.213.183 - - [10/Aug/2023 14:49:27] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+1.243.213.183 - - [10/Aug/2023 14:49:27] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+1.243.213.183 - - [10/Aug/2023 14:49:27] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+1.243.213.183 - - [10/Aug/2023 14:49:27] "GET /swagger.json HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET / HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET /swagger.json HTTP/1.1" 200 -
+59.17.103.34 - - [10/Aug/2023 14:49:33] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 98  83 128 134 129 121 120 139 102]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[8]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47259804 0.15060784 0.06935294 0.0415098  0.08297059 0.08347059
+  0.06579412 0.0114902  0.02220588]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+1.243.213.183 - - [10/Aug/2023 14:49:37] "POST /model/k_means HTTP/1.1" 200 -
+1.243.213.183 - - [10/Aug/2023 14:50:30] "GET /swagger.json HTTP/1.1" 200 -
+46.101.78.186 - - [10/Aug/2023 15:15:55] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03;ZâãïID©\x98\x9c\x08~ü!µÊ¬')
+46.101.78.186 - - [10/Aug/2023 15:15:55] "\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03;ZâãïID©\x98\x9c\x08~ü!µÊ¬\x85¸§»£§R+:íæTô³z\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+159.203.10.67 - - [10/Aug/2023 16:24:01] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x15\x14\x80£gOÎÃ\x96¯qÏ\x06\x82°\x16\x0e%÷ùÃëÖãªzjßD\x15¥ý\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+159.203.10.67 - - [10/Aug/2023 16:24:01] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x15\x14\x80£gOÎÃ\x96¯qÏ\x06\x82°\x16\x0e%÷ùÃëÖãªzjßD\x15¥ý\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+159.203.10.67 - - [10/Aug/2023 16:24:01] code 400, message Bad request version ('À\x14À')
+159.203.10.67 - - [10/Aug/2023 16:24:01] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03 \x10\x1c­i\x9cÉ\x19ÿâ\x00&£\x96äX\x1bãªU\x17ätâ\x96\x1d9)l´èa\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+159.203.10.67 - - [10/Aug/2023 16:24:02] "GET / HTTP/1.1" 200 -
+198.235.24.97 - - [10/Aug/2023 17:46:22] "GET / HTTP/1.1" 200 -
+162.216.149.63 - - [10/Aug/2023 17:57:15] code 400, message Bad request version ('À(À$À\x14À')
+162.216.149.63 - - [10/Aug/2023 17:57:15] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x031ÿ«ÄI¯;|vû\x1fq^G\x13\x81é\x12\x0dz¢\x07ºPÂ\x0b¢á ÔÚ\x83\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+27.0.238.181 - - [10/Aug/2023 19:16:49] "GET / HTTP/1.1" 200 -
+205.210.31.134 - - [10/Aug/2023 20:49:06] "GET / HTTP/1.0" 200 -
+198.235.24.226 - - [10/Aug/2023 22:47:47] "GET / HTTP/1.1" 200 -
+27.0.238.181 - - [10/Aug/2023 22:53:20] "GET / HTTP/1.1" 200 -
+45.79.181.251 - - [11/Aug/2023 00:25:19] code 400, message Bad request version ('À\x14À')
+45.79.181.251 - - [11/Aug/2023 00:25:19] "\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x03&0\x0bèÞ\x89!\x01à\x1fF\x0eé¢»Dôß²#B5\x8ccßs\x1e^\x14\x96Ý¾\x00\x00 À/À0À+À,Ì¨Ì©À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+205.210.31.13 - - [11/Aug/2023 00:32:38] "GET / HTTP/1.1" 200 -
+27.0.238.118 - - [11/Aug/2023 01:04:22] "GET / HTTP/1.1" 200 -
+139.59.179.115 - - [11/Aug/2023 03:43:31] code 400, message Bad request version ('0++t\x88\x91Ãñ\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À')
+139.59.179.115 - - [11/Aug/2023 03:43:31] "\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03îýï\x1d\x9cîÊr3o\x0eÎq,ReÊ\x830ÚUü\x11\x1c0++t\x88\x91Ãñ\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+194.156.136.49 - - [11/Aug/2023 06:42:14] "GET /v2/ HTTP/1.0" 404 -
+161.35.160.21 - - [11/Aug/2023 07:44:44] code 400, message Bad request syntax ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ÖÙ-i*\x86\x9el')
+161.35.160.21 - - [11/Aug/2023 07:44:44] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ÖÙ-i*\x86\x9el" HTTPStatus.BAD_REQUEST -
+161.35.160.21 - - [11/Aug/2023 07:44:44] code 400, message Bad request version ('À\x14À')
+161.35.160.21 - - [11/Aug/2023 07:44:44] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03²­K<ú¨\x89J¦ôÆ»\x1cÑ\x86¦Ö7h\x1bG*¾*N@"\x8b=\x0d8/\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+161.35.160.21 - - [11/Aug/2023 07:44:45] "GET / HTTP/1.1" 200 -
+71.6.134.234 - - [11/Aug/2023 08:27:00] "GET / HTTP/1.1" 200 -
+71.6.134.234 - - [11/Aug/2023 08:42:28] code 400, message Bad request version ('\x93â½KHFy4bØ\x05g=\x96#|')
+71.6.134.234 - - [11/Aug/2023 08:42:28] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x1e5\x9b\x82ÐÏ[Ü8~\x12\x9c\x86\x0f\x85\x93â½KHFy4bØ\x05g=\x96#|" HTTPStatus.BAD_REQUEST -
+27.0.238.118 - - [11/Aug/2023 09:09:23] "GET / HTTP/1.1" 200 -
+198.235.24.98 - - [11/Aug/2023 20:50:35] "GET / HTTP/1.1" 200 -
+170.64.178.12 - - [11/Aug/2023 21:21:37] code 400, message Bad request version ('10.0.22621.0')
+170.64.178.12 - - [11/Aug/2023 21:21:37] "\x00\x00\x00\x009\x00\x00\x008\x06\x00\x02SDR# v1.0.0.1910 on Microsoft Windows NT 10.0.22621.0" HTTPStatus.BAD_REQUEST -
+162.142.125.225 - - [11/Aug/2023 23:07:01] "GET / HTTP/1.1" 200 -
+103.56.61.139 - - [11/Aug/2023 23:27:16] code 400, message Bad request version ('ÿÿÿÖ\x02\x07\x06\x80\x06H\x00\x00\x00')
+103.56.61.139 - - [11/Aug/2023 23:27:16] "\x02\x01\x00]\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00 \x00\x00\x00\x00\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00 \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01512 \x00\x00\x00\x03\x00\x00\x00\x00â\x00\x12\x01\x07ïe\x7f ÿÿÿÖ\x02\x07\x06\x80\x06H\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+8.222.237.89 - - [12/Aug/2023 00:28:26] code 400, message Bad request syntax ('00000000000000000000')
+8.222.237.89 - - [12/Aug/2023 00:28:26] "00000000000000000000" HTTPStatus.BAD_REQUEST -
+8.222.237.89 - - [12/Aug/2023 00:28:26] "GET / HTTP/1.0" 200 -
+8.222.237.89 - - [12/Aug/2023 00:28:26] "GET / HTTP/1.1" 200 -
+8.222.237.89 - - [12/Aug/2023 00:28:26] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+8.222.237.89 - - [12/Aug/2023 00:28:26] "GET /sitemap.xml HTTP/1.1" 404 -
+8.222.237.89 - - [12/Aug/2023 00:28:26] "GET /robots.txt HTTP/1.1" 404 -
+8.222.237.89 - - [12/Aug/2023 00:28:26] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+205.210.31.255 - - [12/Aug/2023 01:28:08] "GET / HTTP/1.0" 200 -
+188.166.87.67 - - [12/Aug/2023 01:47:00] "GET / HTTP/1.1" 200 -
+205.210.31.19 - - [12/Aug/2023 02:07:17] "GET / HTTP/1.1" 200 -
+162.216.150.113 - - [12/Aug/2023 06:02:45] code 400, message Bad request version ('À(À$À\x14À')
+162.216.150.113 - - [12/Aug/2023 06:02:45] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x8e¨7'_\x1c\x9e°ü­\x0f»ü1&\x0b¸8Ï½ø­°Ò|y?Çtº(:\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.146.58 - - [12/Aug/2023 06:07:37] code 400, message Bad request version ('À\x14À')
+167.94.146.58 - - [12/Aug/2023 06:07:37] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x1aÖÚ¾\x17¼`#±\x11Æ¨\x89Ê³\x06ò\x14\x82\x85¬\x98ë­Ð\x83æm¾Àaà JåßË\x12ë\x9e¯\x88rª\x9bÈ¢Ò[\x80Ù¢P¸\x0eýAß""­v]íM\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.146.58 - - [12/Aug/2023 06:07:38] "GET / HTTP/1.1" 200 -
+167.94.146.58 - - [12/Aug/2023 06:07:39] "GET / HTTP/1.1" 200 -
+167.94.146.58 - - [12/Aug/2023 06:07:39] code 505, message Invalid HTTP version (2.0)
+167.94.146.58 - - [12/Aug/2023 06:07:39] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.146.58 - - [12/Aug/2023 06:07:40] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.146.58 - - [12/Aug/2023 06:07:40] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.146.58 - - [12/Aug/2023 06:07:41] "GET /favicon.ico HTTP/1.1" 404 -
+198.235.24.18 - - [12/Aug/2023 07:40:31] "GET / HTTP/1.0" 200 -
+162.142.125.14 - - [12/Aug/2023 08:49:31] code 400, message Bad request version ('À\x14À')
+162.142.125.14 - - [12/Aug/2023 08:49:31] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ï¡æD)Þä-µ\x87&\x12¾\x87t\x05ÈúÑ[^X\x9f\x02BE\x9aIªKÇf ø¼so!G\x81Lå/V"\x8b«\x13\x058a\x12ßÖ?´\\ÿÀhxkCÅv\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.14 - - [12/Aug/2023 08:49:33] "GET / HTTP/1.1" 200 -
+162.142.125.14 - - [12/Aug/2023 08:49:33] "GET / HTTP/1.1" 200 -
+162.142.125.14 - - [12/Aug/2023 08:49:33] code 505, message Invalid HTTP version (2.0)
+162.142.125.14 - - [12/Aug/2023 08:49:33] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.14 - - [12/Aug/2023 08:49:34] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.14 - - [12/Aug/2023 08:49:34] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.14 - - [12/Aug/2023 08:49:34] "GET /favicon.ico HTTP/1.1" 404 -
+170.106.173.40 - - [12/Aug/2023 17:07:38] code 400, message Bad request version ('À\x13À')
+170.106.173.40 - - [12/Aug/2023 17:07:38] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03I\x06²ù¼\x99iÀYûøºe-\x83Ud]\x0e\x8d·b8´gÆÝ9dZ8f gÁ\x81i³öòË°©\x19NÖ½\x95g|püé<Z¡\x90T·é¥8'O;\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+170.106.173.40 - - [12/Aug/2023 17:07:48] "GET / HTTP/1.1" 200 -
+205.210.31.23 - - [12/Aug/2023 18:12:23] "GET / HTTP/1.1" 200 -
+205.210.31.211 - - [12/Aug/2023 18:20:06] "GET / HTTP/1.1" 200 -
+123.254.109.160 - - [12/Aug/2023 19:43:57] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00®\x01\x00\x00ª\x03\x03§W\x00ø\x9c\x18\x95Â\xadÆÎô\x05þIÆS\x82e\x01a'jðlgå#Ê¿\x19þ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À")
+123.254.109.160 - - [12/Aug/2023 19:43:57] "\x16\x03\x01\x00®\x01\x00\x00ª\x03\x03§W\x00ø\x9c\x18\x95Â­ÆÎô\x05þIÆS\x82e\x01a'jðlgå#Ê¿\x19þ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+123.254.109.160 - - [12/Aug/2023 19:44:23] code 400, message Bad request version ('0.12\x00')
+123.254.109.160 - - [12/Aug/2023 19:44:23] "\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00" HTTPStatus.BAD_REQUEST -
+123.254.109.160 - - [12/Aug/2023 19:44:34] code 400, message Bad HTTP/0.9 request type ('\x00')
+123.254.109.160 - - [12/Aug/2023 19:44:34] "\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03" HTTPStatus.BAD_REQUEST -
+123.254.109.160 - - [12/Aug/2023 19:44:35] "GET / HTTP/1.1" 200 -
+123.254.109.160 - - [12/Aug/2023 19:44:38] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+123.254.109.160 - - [12/Aug/2023 19:44:39] "GET /robots.txt HTTP/1.1" 404 -
+123.254.109.160 - - [12/Aug/2023 19:44:40] "GET /sitemap.xml HTTP/1.1" 404 -
+198.199.100.133 - - [12/Aug/2023 22:33:05] "GET /v2/ HTTP/1.1" 404 -
+198.235.24.10 - - [12/Aug/2023 23:06:21] "GET / HTTP/1.0" 200 -
+36.99.136.136 - - [12/Aug/2023 23:34:45] "GET / HTTP/1.1" 200 -
+36.99.136.128 - - [12/Aug/2023 23:34:45] "GET / HTTP/1.1" 200 -
+36.99.136.129 - - [12/Aug/2023 23:34:45] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+36.99.136.128 - - [12/Aug/2023 23:34:45] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+36.99.136.129 - - [12/Aug/2023 23:34:46] "GET /swagger.json HTTP/1.1" 200 -
+36.99.136.137 - - [12/Aug/2023 23:34:47] "GET / HTTP/1.1" 200 -
+36.99.136.128 - - [12/Aug/2023 23:34:48] "GET / HTTP/1.1" 200 -
+36.99.136.129 - - [12/Aug/2023 23:34:48] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+36.99.136.128 - - [12/Aug/2023 23:34:48] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+36.99.136.129 - - [12/Aug/2023 23:34:49] "GET /swagger.json HTTP/1.1" 200 -
+36.99.136.137 - - [12/Aug/2023 23:34:50] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+36.99.136.129 - - [12/Aug/2023 23:34:52] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+188.166.11.64 - - [13/Aug/2023 00:25:50] "GET / HTTP/1.1" 200 -
+36.99.136.137 - - [13/Aug/2023 00:51:57] "GET / HTTP/1.1" 200 -
+36.99.136.129 - - [13/Aug/2023 00:51:57] "GET / HTTP/1.1" 200 -
+36.99.136.128 - - [13/Aug/2023 00:51:57] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+36.99.136.128 - - [13/Aug/2023 00:51:57] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+36.99.136.128 - - [13/Aug/2023 00:51:58] "GET /swagger.json HTTP/1.1" 200 -
+36.99.136.128 - - [13/Aug/2023 00:52:00] "GET / HTTP/1.1" 200 -
+36.99.136.136 - - [13/Aug/2023 00:52:00] "GET / HTTP/1.1" 200 -
+36.99.136.137 - - [13/Aug/2023 00:52:01] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+36.99.136.137 - - [13/Aug/2023 00:52:01] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+36.99.136.129 - - [13/Aug/2023 00:52:02] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+36.99.136.136 - - [13/Aug/2023 00:52:02] "GET /swagger.json HTTP/1.1" 200 -
+36.99.136.129 - - [13/Aug/2023 00:52:11] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.172.30.253 - - [13/Aug/2023 01:42:24] "GET / HTTP/1.0" 200 -
+167.172.30.253 - - [13/Aug/2023 01:42:25] code 400, message Bad request version ('RTSP/1.0')
+167.172.30.253 - - [13/Aug/2023 01:42:25] "OPTIONS / RTSP/1.0" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:27] code 400, message Bad HTTP/0.9 request type ('\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:27] "\x00\x1e\x00\x06\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x07version\x04bind\x00\x00\x10\x00\x03" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:29] code 400, message Bad request version ('0.12\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:29] "\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:29] code 400, message Bad request syntax ('#ST')
+167.172.30.253 - - [13/Aug/2023 01:42:29] "#ST" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:31] code 400, message Bad request version ('GetClassName\x00\x00\x00\x02\x04\x00\x00\x00\x00\x01\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:31] "\x00\x00\x00\x1f\x00\x00\x00\x00\x00\x00\x00\x0cGetClassName\x00\x00\x00\x02\x04\x00\x00\x00\x00\x01\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:32] code 400, message Bad HTTP/0.9 request type ('\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:32] "\x00\x0bn\x00\x00\x00\x00\x01\x04beio" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:34] code 400, message Bad request syntax ('\x00\x00\x07\x00\x08\x00\x03\x00\x04\x00\x05\x00\x06')
+167.172.30.253 - - [13/Aug/2023 01:42:34] "\x00\x00\x07\x00\x08\x00\x03\x00\x04\x00\x05\x00\x06" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:34] "OPTIONS / HTTP/1.0" 200 -
+167.172.30.253 - - [13/Aug/2023 01:42:36] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:36] "\x80\x00\x00(rþ\x1d\x13\x00\x00\x00\x00\x00\x00\x00\x02\x00\x01\x86 \x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:38] code 400, message Bad HTTP/0.9 request type ('\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:38] "\x00\x0c\x00\x00\x10\x00\x00\x00\x00\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:38] code 400, message Bad request syntax ('HELP')
+167.172.30.253 - - [13/Aug/2023 01:42:38] "HELP" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:38] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:38] "\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:39] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie:')
+167.172.30.253 - - [13/Aug/2023 01:42:39] "\x03\x00\x00*%à\x00\x00\x00\x00\x00Cookie: mstshash=beio" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:39] code 400, message Bad request version ('\x00/\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:39] "\x16\x03\x00\x00i\x01\x00\x00e\x03\x03U\x1c§ärandom1random2random3random4\x00\x00\x0c\x00/\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:40] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+167.172.30.253 - - [13/Aug/2023 01:42:40] "\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:42] code 400, message Bad HTTP/0.9 request type ('l\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:42] "l\x00\x0b\x00\x00\x00\x00\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:42] "GET /nice%20ports,/Trinity.txt.bak HTTP/1.0" 404 -
+167.172.30.253 - - [13/Aug/2023 01:42:42] code 400, message Bad request syntax ('\x01default')
+167.172.30.253 - - [13/Aug/2023 01:42:42] "\x01default" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:43] code 400, message Bad request syntax ('0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:43] "0\x84\x00\x00\x00-\x02\x01\x07c\x84\x00\x00\x00$\x04\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:44] code 400, message Bad HTTP/0.9 request type ('0')
+167.172.30.253 - - [13/Aug/2023 01:42:44] "0\x0c\x02\x01\x01`\x07\x02\x01\x02\x04\x00\x80\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:45] code 400, message Bad request version ('SIP/2.0')
+167.172.30.253 - - [13/Aug/2023 01:42:45] "OPTIONS sip:nm SIP/2.0" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:47] code 400, message Bad request syntax ('TNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:47] "TNMP\x04\x00\x00\x00TNME\x00\x00\x04\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:48] "\x03\x00\x00\x0b\x06à\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:50] code 400, message Bad request syntax ('DmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13')
+167.172.30.253 - - [13/Aug/2023 01:42:50] "DmdT\x00\x00\x00\x17\x00\x00\x00\x01\x00\x00\x00\x00\x11\x11\x00ÿ\x01ÿ\x13" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:52] code 400, message Bad HTTP/0.9 request type (':\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@')
+167.172.30.253 - - [13/Aug/2023 01:42:52] ":\x00\x00\x00/\x00\x00\x00\x02\x00\x00@\x02\x0f\x00\x01\x00=\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x1f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:53] code 400, message Bad request syntax ('JRMI\x00\x02K')
+167.172.30.253 - - [13/Aug/2023 01:42:53] "JRMI\x00\x02K" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:55] code 400, message Bad request version ('\x00{\x00\x00\x00\x00\x00A\x00A\x00\x00\x00-\x00\x00A\x00\x00\x00-\x00\x00\x00a\x00\x00-\x00A\x00A\x00\x00A\x00-\x00\x00\x00\x00\x00A\x00\x00A\x00A\x00\x00A\x00A\x00\x00}\x00\x00\x00àmß_')
+167.172.30.253 - - [13/Aug/2023 01:42:55] "\x01\x00\x00ýÎú\x0b° \x00\x00\x00MMS\x14\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x12\x00\x00\x00\x01\x00\x03\x00ðððð\x0b\x00\x04\x00\x1c\x00\x03\x00N\x00S\x00P\x00l\x00a\x00y\x00e\x00r\x00/\x009\x00.\x00\x00.\x00\x00.\x02\x009\x008\x00\x00;\x00 \x00{\x00\x00\x00\x00\x00A\x00A\x00\x00\x00-\x00\x00A\x00\x00\x00-\x00\x00\x00a\x00\x00-\x00A\x00A\x00\x00A\x00-\x00\x00\x00\x00\x00A\x00\x00A\x00A\x00\x00A\x00A\x00\x00}\x00\x00\x00àmß_" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:57] code 400, message Bad HTTP/0.9 request type ('\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:57] "\x00Z\x00\x00\x01\x00\x00\x00\x016\x01,\x00\x00\x08\x00\x7fÿ\x7f\x08\x00\x00\x00\x01\x00 \x00:\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x04æ\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00(CONNECT_DATA=(COMMAND=version))" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:42:58] code 400, message Bad request version ('\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:42:58] "\x12\x01\x004\x00\x00\x00\x00\x00\x00\x15\x00\x06\x01\x00\x1b\x00\x01\x02\x00\x1c\x00\x0c\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00H\x0f\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:00] code 400, message Bad request syntax ('\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00')
+167.172.30.253 - - [13/Aug/2023 01:43:00] "\x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x0f\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:02] code 400, message Bad request syntax ('GIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:43:02] "GIOP\x01\x00\x01\x00$\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00\x00abcdef\x00\x00\x04\x00\x00\x00get\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:03] code 400, message Bad request syntax ('\x00\x9c\x00\x01\x1a+<M\x00\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01ÿÿ\x00\x01none\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00beio\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:43:03] "\x00\x9c\x00\x01\x1a+<M\x00\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01ÿÿ\x00\x01none\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00beio\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:05] code 400, message Bad request syntax ('\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:43:05] "\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00\x01\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:07] code 400, message Bad request syntax ('\x03\x81\x00\x00\x00\x00\x00_@\x00\x017\x00\x00\x00\x00\x00\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00InitiatorName=iqn.1991-05.com.microsoft:beio-iscsi-probe\x00SessionType=Discovery\x00AuthMethod=None\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:43:07] "\x03\x81\x00\x00\x00\x00\x00_@\x00\x017\x00\x00\x00\x00\x00\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00InitiatorName=iqn.1991-05.com.microsoft:beio-iscsi-probe\x00SessionType=Discovery\x00AuthMethod=None\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:09] code 400, message Bad request version ('CharruaVista')
+167.172.30.253 - - [13/Aug/2023 01:43:09] "\x01\x00\x00\x00\x00Í\x00\x01\x00\x00ANY-SCP\x00\x00\x00\x00\x00\x00\x00\x00\x00FINDSCU\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x10\x00\x00\x151.2.840.10008.3.1.1.1 \x00\x00.\x01\x00\x00\x000\x00\x00\x111.2.840.10008.1.1@\x00\x00\x111.2.840.10008.1.2P\x00\x00:Q\x00\x00\x04\x00\x00@\x00R\x00\x00\x1e1.2.826.0.1.3680043.2.1396.999U\x00\x00\x0cCharruaVista" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:09] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+167.172.30.253 - - [13/Aug/2023 01:43:09] "\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie: mstshash=Administrator" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:11] code 400, message Bad request syntax ('\x00\x00\x00\x00\x00')
+167.172.30.253 - - [13/Aug/2023 01:43:11] "\x00\x00\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+167.172.30.253 - - [13/Aug/2023 01:43:11] code 400, message Bad request syntax ('\x01I20100')
+167.172.30.253 - - [13/Aug/2023 01:43:11] "\x01I20100" HTTPStatus.BAD_REQUEST -
+35.203.211.130 - - [13/Aug/2023 02:13:37] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ò\x90Ì7»<¡AfÁ=Õ5Þqý\x92ef¬È¿ª\x06B1C|b\xad;¶\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+35.203.211.130 - - [13/Aug/2023 02:13:37] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ò\x90Ì7»<¡AfÁ=Õ5Þqý\x92ef¬È¿ª\x06B1C|b­;¶\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+162.216.150.54 - - [13/Aug/2023 02:43:11] code 400, message Bad request version ('À(À$À\x14À')
+162.216.150.54 - - [13/Aug/2023 02:43:11] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03°Kv\x8f°QÒL£\x96ýj1_k\x0b"\x0e[H\x040Ï:4ß&4ø\x1ar¸\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.145.60 - - [13/Aug/2023 02:50:13] code 400, message Bad request version ('À\x14À')
+167.94.145.60 - - [13/Aug/2023 02:50:13] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x034\x7fBB\x8c\x0bHÆæ#D\x05\x10¾5\x83é6\x05!µ\x9ey«ßgSàDè&w °fÒo\x87rÊÉ\x05c\x08l³4ÿ\x95îiã\x84}¼\x9bÞæø{\x18\x09ëéO\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.145.60 - - [13/Aug/2023 02:50:15] "GET / HTTP/1.1" 200 -
+167.94.145.60 - - [13/Aug/2023 02:50:15] "GET / HTTP/1.1" 200 -
+167.94.145.60 - - [13/Aug/2023 02:50:16] code 505, message Invalid HTTP version (2.0)
+167.94.145.60 - - [13/Aug/2023 02:50:16] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.145.60 - - [13/Aug/2023 02:50:16] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.145.60 - - [13/Aug/2023 02:50:17] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.145.60 - - [13/Aug/2023 02:50:17] "GET /favicon.ico HTTP/1.1" 404 -
+193.118.55.162 - - [13/Aug/2023 03:43:21] "GET / HTTP/1.1" 200 -
+205.210.31.245 - - [13/Aug/2023 09:09:54] "GET / HTTP/1.0" 200 -
+87.251.64.11 - - [13/Aug/2023 09:21:54] code 400, message Bad request version ('¶YD\x01\x00\x00')
+87.251.64.11 - - [13/Aug/2023 09:21:54] "\x12\x01\x00^\x00\x00\x01\x00\x00\x00$\x00\x06\x01\x00*\x00\x01\x02\x00+\x00\x01\x03\x00,\x00\x04\x04\x000\x00\x01\x05\x001\x00$\x06\x00U\x00\x01ÿ\x04\x07\x0c¼\x00\x00\x00\x00\x00\x00\x15Ð\x00 \x00\x00\x00\x00\x00\x00\x00À\x0c¶YD\x01\x00\x00" HTTPStatus.BAD_REQUEST -
+172.104.17.81 - - [13/Aug/2023 09:33:36] "GET / HTTP/1.1" 200 -
+172.104.17.81 - - [13/Aug/2023 09:33:36] "GET /favicon.ico HTTP/1.1" 404 -
+172.104.17.81 - - [13/Aug/2023 09:33:36] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.248.133.35 - - [13/Aug/2023 17:55:32] code 400, message Bad request version ('À\x14À')
+167.248.133.35 - - [13/Aug/2023 17:55:32] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03·å)\x0bÊÖ \x81S\x0d\x88ö\x1aI¤»T^\x11É9F\x0eÿA!\x9b\x7fÒ\x9aàN \x82^h.¨½-M9\x10Ê-]\x8d\x87Ikó\x07Öx?,þ\x12z\x81»¶6«\x15\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.248.133.35 - - [13/Aug/2023 17:55:34] "GET / HTTP/1.1" 200 -
+167.248.133.35 - - [13/Aug/2023 17:55:34] "GET / HTTP/1.1" 200 -
+167.248.133.35 - - [13/Aug/2023 17:55:34] code 505, message Invalid HTTP version (2.0)
+167.248.133.35 - - [13/Aug/2023 17:55:34] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.248.133.35 - - [13/Aug/2023 17:55:35] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.248.133.35 - - [13/Aug/2023 17:55:35] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.248.133.35 - - [13/Aug/2023 17:55:35] "GET /favicon.ico HTTP/1.1" 404 -
+198.235.24.137 - - [13/Aug/2023 18:26:05] "GET / HTTP/1.1" 200 -
+198.235.24.136 - - [13/Aug/2023 18:51:32] "GET / HTTP/1.0" 200 -
+167.94.138.33 - - [13/Aug/2023 23:19:00] code 400, message Bad request version ('À\x14À')
+167.94.138.33 - - [13/Aug/2023 23:19:00] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ò£eb,\x13Öì]\x01SÞW\x10í×·\x82\x98\x07Â\x94­úCÑäÐcº¸X SË!H`.Q+\x05\x15\x01\x08JÄàîKÎ\x88\x02aÁlÍ?¤\x0cÝn\x11x\x1a\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.138.33 - - [13/Aug/2023 23:19:02] "GET / HTTP/1.1" 200 -
+167.94.138.33 - - [13/Aug/2023 23:19:02] "GET / HTTP/1.1" 200 -
+167.94.138.33 - - [13/Aug/2023 23:19:02] code 505, message Invalid HTTP version (2.0)
+167.94.138.33 - - [13/Aug/2023 23:19:02] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.33 - - [13/Aug/2023 23:19:03] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.138.33 - - [13/Aug/2023 23:19:03] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.138.33 - - [13/Aug/2023 23:19:03] "GET /favicon.ico HTTP/1.1" 404 -
+159.89.143.144 - - [13/Aug/2023 23:58:57] code 400, message Bad request version ('À\x14À')
+159.89.143.144 - - [13/Aug/2023 23:58:57] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03¹¥\x90N?C?\x91ô\x85÷\x8cØÊ½\x84áu\x9e\x8c\x13©\\\x19m\x15ÃÙ7ÏÜº\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+159.89.143.144 - - [13/Aug/2023 23:58:57] code 400, message Bad request version ('À\x14À')
+159.89.143.144 - - [13/Aug/2023 23:58:57] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03îS\x18\x19µB¿fÚ\x8fýW ÅóÁôuÐOøZ\x8aÚ*\x98TôCÌ\x8e¤\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+159.89.143.144 - - [13/Aug/2023 23:58:57] "GET / HTTP/1.1" 200 -
+35.203.211.166 - - [14/Aug/2023 00:44:22] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ç;üÅköÀÇÎ~eÜu\x96w\x05ëhõÚ\x14\x0fN\x97>\x94£N°\x04í©\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+35.203.211.166 - - [14/Aug/2023 00:44:22] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ç;üÅköÀÇÎ~eÜu\x96w\x05ëhõÚ\x14\x0fN\x97>\x94£N°\x04í©\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET /favicon.ico HTTP/1.1" 404 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 00:58:34] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/yggai/YGG_AI/flask/learning.py:21: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  data = data.append(pd.Series(keywords, index=data.columns), ignore_index=True)
+1.243.213.183 - - [14/Aug/2023 00:58:40] "POST /model/cosine HTTP/1.1" 200 -
+1.243.213.183 - - [14/Aug/2023 01:00:52] "GET /swagger.json HTTP/1.1" 200 -
+211.231.103.94 - - [14/Aug/2023 01:02:20] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /swagger.json HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+14.39.248.150 - - [14/Aug/2023 01:03:58] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET /swagger.json HTTP/1.1" 200 -
+14.39.248.150 - - [14/Aug/2023 01:04:05] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[120 105 165 122 122  75 128  89 128]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[1]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47008571 0.14794286 0.07108571 0.04013333 0.08328571 0.08454286
+  0.0682     0.01055238 0.02419048]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [14/Aug/2023 01:04:18] "POST /model/k_means HTTP/1.1" 200 -
+205.210.31.216 - - [14/Aug/2023 02:42:53] "GET / HTTP/1.0" 200 -
+134.209.90.188 - - [14/Aug/2023 07:59:33] code 400, message Bad request version ('À\x14À')
+134.209.90.188 - - [14/Aug/2023 07:59:33] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03;ZÙ\x07dÍí.\x03^h\x1bÅ¡Î\x8d¿\x97\x84¯\x1a<ø(\x1aÅ\x1e\x1e\x1dÖÈ´\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+134.209.90.188 - - [14/Aug/2023 07:59:34] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03îóÄ\x9c\xad\x11*\x13*\x90ÈZS>\x1bÈ\x06©k\x03O\x8dÖ¼R\x82\x8aF\x9a\xadâ×\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+134.209.90.188 - - [14/Aug/2023 07:59:34] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03îóÄ\x9c­\x11*\x13*\x90ÈZS>\x1bÈ\x06©k\x03O\x8dÖ¼R\x82\x8aF\x9a­â×\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+134.209.90.188 - - [14/Aug/2023 07:59:34] "GET / HTTP/1.1" 200 -
+198.235.24.109 - - [14/Aug/2023 08:03:28] "GET / HTTP/1.1" 200 -
+185.224.128.17 - - [14/Aug/2023 09:50:05] "CONNECT example.com:80 HTTP/1.1" 404 -
+185.224.128.17 - - [14/Aug/2023 09:50:19] code 400, message Bad request syntax ('\x05\x01\x00')
+185.224.128.17 - - [14/Aug/2023 09:50:19] "\x05\x01\x00" HTTPStatus.BAD_REQUEST -
+185.224.128.17 - - [14/Aug/2023 09:50:19] code 400, message Bad request syntax ('\x04\x01\x00P\x00\x00\x00\x01\x00example.com\x00')
+185.224.128.17 - - [14/Aug/2023 09:50:19] "\x04\x01\x00P\x00\x00\x00\x01\x00example.com\x00" HTTPStatus.BAD_REQUEST -
+134.122.109.187 - - [14/Aug/2023 15:07:12] code 400, message Bad request syntax ('\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03\x95q_\x12&?\x92Æ½¼8u\x810.ª»¦VïI\x847ºÍ;¹èWN`\x8e\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À')
+134.122.109.187 - - [14/Aug/2023 15:07:12] "\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03\x95q_\x12&?\x92Æ½¼8u\x810.ª»¦VïI\x847ºÍ;¹èWN`\x8e\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+118.193.33.116 - - [14/Aug/2023 21:53:27] "GET / HTTP/1.1" 200 -
+198.235.24.30 - - [14/Aug/2023 23:52:05] "GET / HTTP/1.0" 200 -
+152.32.131.34 - - [15/Aug/2023 00:48:56] "GET / HTTP/1.1" 200 -
+152.32.131.34 - - [15/Aug/2023 00:48:57] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+152.32.131.34 - - [15/Aug/2023 00:48:57] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+80.82.70.228 - - [15/Aug/2023 01:09:55] "GET / HTTP/1.0" 200 -
+5.8.10.202 - - [15/Aug/2023 01:10:03] code 400, message Bad request version ('À\x13À')
+5.8.10.202 - - [15/Aug/2023 01:10:03] "\x16\x03\x01\x00ê\x01\x00\x00æ\x03\x03¦{ÝZÆ×ø%­eyÔ°a»V\x95|\x9f\x05çðzÈ8yào\x1dã¿¡ yÑ0Ñ4n«×4Lìä@\\Y\x02è£\x8f\x1a_\x92\x9c\x91È\x9c,"#5\x15ì\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+5.8.10.202 - - [15/Aug/2023 01:10:03] "GET /v2/_catalog HTTP/1.1" 404 -
+5.8.10.202 - - [15/Aug/2023 01:10:09] code 400, message Bad request version ('À\x13À')
+5.8.10.202 - - [15/Aug/2023 01:10:09] "\x16\x03\x01\x00ê\x01\x00\x00æ\x03\x03ö\x08&c¤í4ö\x92­\x85÷²H<d\x0cF\x8e|X7¶ÌYbÐ\x002GÁé &3`ÿÙRi/bë\x9cAx:­°òÜ\x0eº5n^\x03R³\x1d3\x8a\x95×¶\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+5.8.10.202 - - [15/Aug/2023 01:10:09] code 400, message Bad request version ('À\x13À')
+5.8.10.202 - - [15/Aug/2023 01:10:09] "\x16\x03\x01\x00ê\x01\x00\x00æ\x03\x03\x06\x02Ü\x1edD\x91x:\x13\x85\x80\x14\x96¢\x87\x11Ò¼NGÄü]e"\x1d]k\x04a, Y¦w(§5¿W=äëh6Ø9i-SN¯úÙ\x12^/øÐ«å\x03\x1dj\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+5.8.10.202 - - [15/Aug/2023 01:10:10] "GET /aaa9 HTTP/1.1" 404 -
+5.8.10.202 - - [15/Aug/2023 01:10:10] "GET /v2/_catalog HTTP/1.1" 404 -
+5.8.10.202 - - [15/Aug/2023 01:10:10] code 400, message Bad request version ('À\x13À')
+5.8.10.202 - - [15/Aug/2023 01:10:10] "\x16\x03\x01\x00ê\x01\x00\x00æ\x03\x03Øé¢\x9dïÏ®\x98ÿVG\x02\x13p\x00¡^k¤\x84/^/Ëc´\\\x83Ì¨\x9cy Á\x99ß\x84\x83å¦ûn[í¯\x95"ö½[Î\x1d¦\x8b,Ç\x80íu}i¨\x18R\x98\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+5.8.10.202 - - [15/Aug/2023 01:10:11] "GET /aab9 HTTP/1.1" 404 -
+198.235.24.217 - - [15/Aug/2023 01:13:52] "GET / HTTP/1.0" 200 -
+62.122.184.211 - - [15/Aug/2023 02:02:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+62.122.184.211 - - [15/Aug/2023 02:02:08] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+205.210.31.147 - - [15/Aug/2023 02:59:29] "GET / HTTP/1.1" 200 -
+35.203.210.87 - - [15/Aug/2023 05:19:55] code 400, message Bad request version ('À(À$À\x14À')
+35.203.210.87 - - [15/Aug/2023 05:19:55] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03zí@6\x0d7Ò"¾¿¼æ3Am\x97#\\´¥ªäÊ\x1f\x94xÍ4ØUÞ\x8a\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.223 - - [15/Aug/2023 09:16:51] "GET / HTTP/1.1" 200 -
+89.248.165.96 - - [15/Aug/2023 15:40:47] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+89.248.165.96 - - [15/Aug/2023 15:40:47] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+205.210.31.56 - - [15/Aug/2023 19:44:02] "GET / HTTP/1.0" 200 -
+162.216.149.235 - - [15/Aug/2023 19:57:21] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03^\x7fÖ¶l\x9eÍ@²x·"\x0eA,Æ´*ü')
+162.216.149.235 - - [15/Aug/2023 19:57:21] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03^\x7fÖ¶l\x9eÍ@²x·"\x0eA,Æ´*ü" HTTPStatus.BAD_REQUEST -
+152.32.150.117 - - [15/Aug/2023 23:48:40] code 400, message Bad request version ('À\x14À')
+152.32.150.117 - - [15/Aug/2023 23:48:40] "\x16\x03\x01\x01\x09\x01\x00\x01\x05\x03\x03Q\x06ô\x9a¼ï\x1eÅ1­\x1a \x12VûP\x96ôÓ\x97 "6¹\x19\x86mÛ¹áÓ\x86 Ë),÷e÷ÿD\x1aE*\x0cr5©Ã\x18¹[ 4\x9be=\x1e\x81ß ¬Ý¿\x8d\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+152.32.150.117 - - [15/Aug/2023 23:48:52] "GET / HTTP/1.1" 200 -
+152.32.150.117 - - [15/Aug/2023 23:48:54] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+152.32.150.117 - - [15/Aug/2023 23:48:56] "GET /robots.txt HTTP/1.1" 404 -
+152.32.150.117 - - [15/Aug/2023 23:48:58] "GET /sitemap.xml HTTP/1.1" 404 -
+152.32.150.117 - - [15/Aug/2023 23:49:00] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+152.32.150.117 - - [15/Aug/2023 23:49:00] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+107.170.247.39 - - [16/Aug/2023 02:26:48] "GET /v2/ HTTP/1.1" 404 -
+162.142.125.226 - - [16/Aug/2023 04:34:06] "GET / HTTP/1.1" 200 -
+162.142.125.226 - - [16/Aug/2023 04:34:16] code 505, message Invalid HTTP version (2.0)
+162.142.125.226 - - [16/Aug/2023 04:34:16] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.226 - - [16/Aug/2023 04:34:17] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.226 - - [16/Aug/2023 04:34:17] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.226 - - [16/Aug/2023 04:34:17] "GET /favicon.ico HTTP/1.1" 404 -
+89.248.171.23 - - [16/Aug/2023 05:11:56] "GET / HTTP/1.1" 200 -
+89.248.171.23 - - [16/Aug/2023 05:11:56] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+89.248.171.23 - - [16/Aug/2023 05:11:56] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+89.248.171.23 - - [16/Aug/2023 05:11:56] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+89.248.171.23 - - [16/Aug/2023 05:11:56] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+89.248.171.23 - - [16/Aug/2023 05:11:59] "GET /swagger.json HTTP/1.1" 200 -
+94.102.49.123 - - [16/Aug/2023 05:12:17] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+80.82.70.198 - - [16/Aug/2023 05:12:18] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+205.210.31.196 - - [16/Aug/2023 06:26:35] "GET / HTTP/1.1" 200 -
+198.235.24.131 - - [16/Aug/2023 07:25:12] "GET / HTTP/1.0" 200 -
+198.235.24.131 - - [16/Aug/2023 07:32:43] "GET / HTTP/1.1" 200 -
+45.143.201.62 - - [16/Aug/2023 08:37:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.143.201.62 - - [16/Aug/2023 08:37:13] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+45.143.201.62 - - [16/Aug/2023 10:50:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.143.201.62 - - [16/Aug/2023 10:50:43] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+139.59.163.97 - - [16/Aug/2023 13:36:44] code 400, message Bad request syntax ('\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03©0\x8b³¯YØ')
+139.59.163.97 - - [16/Aug/2023 13:36:44] "\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03©0\x8b³¯YØ" HTTPStatus.BAD_REQUEST -
+92.63.196.77 - - [16/Aug/2023 14:13:23] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+92.63.196.77 - - [16/Aug/2023 14:13:23] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+71.6.134.230 - - [16/Aug/2023 15:14:57] "GET / HTTP/1.1" 200 -
+71.6.134.230 - - [16/Aug/2023 15:32:13] code 400, message Bad request version ('À\x14À')
+71.6.134.230 - - [16/Aug/2023 15:32:13] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03_è:õa2¸<õº\x9a\x00\x05T\x18¯¬\x813\x92\x09ôú\x13<\x7f6þ¢ÿyì Ìô·¦«¯çi)ô\x08îÂ^æ\x8c\x99]\x87\x0dN^gìåTU-%#ì¦\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+64.227.166.170 - - [16/Aug/2023 16:20:00] code 400, message Bad request version ('À\x14À')
+64.227.166.170 - - [16/Aug/2023 16:20:00] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x0b~àV&\x83Q\x1c\x91í·Ç\x08±Â©9ý(Ùë\x04P&ÿ]qÄóð\x7fð\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+64.227.166.170 - - [16/Aug/2023 16:20:00] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03<çLä°¶ñ§èÂ~\x87¿æ-\x99#NÀÑCÄ1îq\x96n]Ñá¾b\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+64.227.166.170 - - [16/Aug/2023 16:20:00] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03<çLä°¶ñ§èÂ~\x87¿æ-\x99#NÀÑCÄ1îq\x96n]Ñá¾b\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+64.227.166.170 - - [16/Aug/2023 16:20:00] "GET / HTTP/1.1" 200 -
+205.210.31.6 - - [16/Aug/2023 20:15:59] "GET / HTTP/1.0" 200 -
+167.248.133.52 - - [16/Aug/2023 21:56:10] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ªëØ"K\x11Ó·\x9f\x81îq\x05ã\x13JqÙ%Á³ËCåeè=(ø§')
+167.248.133.52 - - [16/Aug/2023 21:56:10] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ªëØ"K\x11Ó·\x9f\x81îq\x05ã\x13JqÙ%Á³ËCåeè=(ø§" HTTPStatus.BAD_REQUEST -
+167.248.133.52 - - [16/Aug/2023 21:56:11] "GET / HTTP/1.1" 200 -
+167.248.133.52 - - [16/Aug/2023 21:56:12] "GET / HTTP/1.1" 200 -
+167.248.133.52 - - [16/Aug/2023 21:56:12] code 505, message Invalid HTTP version (2.0)
+167.248.133.52 - - [16/Aug/2023 21:56:12] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.248.133.52 - - [16/Aug/2023 21:56:12] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.248.133.52 - - [16/Aug/2023 21:56:13] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.248.133.52 - - [16/Aug/2023 21:56:13] "GET /favicon.ico HTTP/1.1" 404 -
+205.210.31.38 - - [16/Aug/2023 22:02:10] "GET / HTTP/1.0" 200 -
+35.203.211.194 - - [16/Aug/2023 23:18:55] code 400, message Bad request version ('À(À$À\x14À')
+35.203.211.194 - - [16/Aug/2023 23:18:55] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ý´½®]T\x16@<§:Ø\x02q¼\x89¦© ­MÖ\x88×~\x1b°>Ò\x80\x1aw\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+205.210.31.215 - - [17/Aug/2023 00:11:31] "GET / HTTP/1.1" 200 -
+143.110.161.231 - - [17/Aug/2023 03:05:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03^XÙ\x8e\x15')
+143.110.161.231 - - [17/Aug/2023 03:05:25] "\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03^XÙ\x8e\x15\x0cõû\x81k9MØ&Y\x10¯Ç¬ÿÊàc"(¸\x8b\x8atü6\x89\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+205.210.31.28 - - [17/Aug/2023 06:44:47] "GET / HTTP/1.1" 200 -
+183.136.225.5 - - [17/Aug/2023 06:49:16] "GET / HTTP/1.1" 200 -
+183.136.225.5 - - [17/Aug/2023 06:49:41] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+183.136.225.5 - - [17/Aug/2023 06:49:41] "GET /robots.txt HTTP/1.1" 404 -
+183.136.225.5 - - [17/Aug/2023 06:49:41] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+183.136.225.5 - - [17/Aug/2023 06:49:48] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+79.124.62.106 - - [17/Aug/2023 10:09:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+79.124.62.106 - - [17/Aug/2023 10:09:12] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+124.31.105.227 - - [17/Aug/2023 15:42:23] "GET / HTTP/1.0" 200 -
+39.153.251.119 - - [17/Aug/2023 15:42:36] "GET / HTTP/1.1" 200 -
+27.47.26.188 - - [17/Aug/2023 15:42:36] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+92.63.196.57 - - [17/Aug/2023 18:02:08] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+92.63.196.57 - - [17/Aug/2023 18:02:08] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+185.170.144.3 - - [17/Aug/2023 18:36:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.170.144.3 - - [17/Aug/2023 18:36:30] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+205.210.31.102 - - [18/Aug/2023 01:57:57] "GET / HTTP/1.0" 200 -
+198.235.24.156 - - [18/Aug/2023 02:53:46] "GET / HTTP/1.0" 200 -
+167.172.62.110 - - [18/Aug/2023 03:15:41] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03\xad<')
+167.172.62.110 - - [18/Aug/2023 03:15:41] "\x16\x03\x01\x01ú\x01\x00\x01ö\x03\x03­<\x0cÆ/ä9ö\x99Ýf\x86¹8êÊ(x5SÁSÛçÒÅÁðUb!e\x00\x01<Ì\x14Ì\x13Ì\x15À0À,À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+35.203.211.15 - - [18/Aug/2023 04:19:57] code 400, message Bad request version ('À(À$À\x14À')
+35.203.211.15 - - [18/Aug/2023 04:19:57] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Hriq\x986ñ}.Ñ(ÆÚ©`÷®õ­üÂh0?&\x09Y:-*\x94\x97\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+35.203.211.33 - - [18/Aug/2023 04:30:24] code 400, message Bad request version ('À(À$À\x14À')
+35.203.211.33 - - [18/Aug/2023 04:30:24] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x0f|`^ªì0\x87\x8c\x04%\x00G7ÃïÞ+`\x8b©â \x93r·vÚD&Lb\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+205.210.31.139 - - [18/Aug/2023 05:12:49] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /swagger.json HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+14.39.248.150 - - [18/Aug/2023 06:32:29] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 304 -
+14.39.248.150 - - [18/Aug/2023 06:32:30] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+14.39.248.150 - - [18/Aug/2023 06:32:30] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+14.39.248.150 - - [18/Aug/2023 06:32:35] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:35] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+14.39.248.150 - - [18/Aug/2023 06:32:35] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:35] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:35] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 06:32:35] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[101 126 141 120  97 114  86 119 150]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[0]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47312871 0.15011881 0.06973267 0.04068317 0.0830495  0.08311881
+  0.06613861 0.01160396 0.02242574]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 06:33:09] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 96  77 113 105 128 142 125 154 114]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[3]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.4698381  0.14839048 0.0717619  0.04028571 0.08328571 0.08475238
+  0.06789524 0.01055238 0.02325714]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:34:09] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 85 117 113 120 142  95 126 106 150]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[7]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47042453 0.14873585 0.07237736 0.03990566 0.0825     0.08464151
+  0.06725472 0.01114151 0.02303774]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:34:49] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[140 107  87 125 121  95 122 144 113]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[2023-08-18 07:35:23,338] ERROR in app: Exception on /model/k_means [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/ubuntu/yggai/YGG_AI/flask/flask_app.py", line 58, in post
+    result = kmeans(list)
+  File "/home/ubuntu/yggai/YGG_AI/flask/learning.py", line 93, in kmeans
+    print(km_model.predict([keywords]))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py", line 1097, in predict
+    X = self._check_test_data(X)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py", line 950, in _check_test_data
+    X = self._validate_data(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py", line 625, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py", line 414, in _check_n_features
+    raise ValueError(
+ValueError: X has 1 features, but KMeans is expecting 9 features as input.
+14.39.248.150 - - [18/Aug/2023 07:35:23] "POST /model/k_means HTTP/1.1" 500 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[103 122 117 147  90 140  93 119 123]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[2023-08-18 07:36:30,476] ERROR in app: Exception on /model/k_means [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/ubuntu/yggai/YGG_AI/flask/flask_app.py", line 58, in post
+    result = kmeans(list)
+  File "/home/ubuntu/yggai/YGG_AI/flask/learning.py", line 93, in kmeans
+    print(km_model.predict([keywords]))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py", line 1097, in predict
+    X = self._check_test_data(X)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py", line 950, in _check_test_data
+    X = self._validate_data(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py", line 625, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py", line 414, in _check_n_features
+    raise ValueError(
+ValueError: X has 1 features, but KMeans is expecting 9 features as input.
+14.39.248.150 - - [18/Aug/2023 07:36:30] "POST /model/k_means HTTP/1.1" 500 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[136 121  94 101 145 126  82 129 120]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[2023-08-18 07:36:49,740] ERROR in app: Exception on /model/k_means [POST]
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/api.py", line 404, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask/views.py", line 109, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/flask_restx/resource.py", line 46, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/ubuntu/yggai/YGG_AI/flask/flask_app.py", line 58, in post
+    result = kmeans(list)
+  File "/home/ubuntu/yggai/YGG_AI/flask/learning.py", line 93, in kmeans
+    print(km_model.predict([keywords]))
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py", line 1097, in predict
+    X = self._check_test_data(X)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py", line 950, in _check_test_data
+    X = self._validate_data(
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py", line 625, in _validate_data
+    self._check_n_features(X, reset=reset)
+  File "/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py", line 414, in _check_n_features
+    raise ValueError(
+ValueError: X has 1 features, but KMeans is expecting 9 features as input.
+14.39.248.150 - - [18/Aug/2023 07:36:49] "POST /model/k_means HTTP/1.1" 500 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[138 120 142  78 130 102 121 125  98]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[5]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47151961 0.14908824 0.069      0.04086275 0.08376471 0.08332353
+  0.06784314 0.01077451 0.02383333]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:38:52] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[119 133 121  77  94 104 154 126 126]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[5]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47080769 0.14691346 0.07275    0.03969231 0.08278846 0.08476923
+  0.06850962 0.01025    0.02353846]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:38:55] "POST /model/k_means HTTP/1.1" 200 -
+46.101.147.168 - - [18/Aug/2023 07:49:04] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03!W-ÇÃ~\x8bll\x06|Z\x99ñyYwc\x9fp\x06\x87!\x0ed¸J\x0f\x88Å~y\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+46.101.147.168 - - [18/Aug/2023 07:49:04] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03!W-ÇÃ~\x8bll\x06|Z\x99ñyYwc\x9fp\x06\x87!\x0ed¸J\x0f\x88Å~y\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+46.101.147.168 - - [18/Aug/2023 07:49:05] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x15Müæ°¦³JV)Ù\x02\x91ç5²c\x1b¾Ì\x9b-ÀH@\x90\x13\x18Ã$C\x17\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+46.101.147.168 - - [18/Aug/2023 07:49:05] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x15Müæ°¦³JV)Ù\x02\x91ç5²c\x1b¾Ì\x9b-ÀH@\x90\x13\x18Ã$C\x17\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+46.101.147.168 - - [18/Aug/2023 07:49:05] "GET / HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 88  96 145 143 127 114 102 120 119]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[6]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47264706 0.14956863 0.07007843 0.04052941 0.08298039 0.083
+  0.06684314 0.0114902  0.02287255]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:52:34] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 93 132 127 128 110  87 103 150 124]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[6]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.472      0.14712621 0.0725534  0.03947573 0.08192233 0.08500971
+  0.06829126 0.01085437 0.02280583]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:52:44] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[131  96 121 124 125 107 134 123  93]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[5]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47214953 0.14845794 0.07496262 0.03905607 0.07861682 0.08636449
+  0.0665514  0.01143925 0.0224486 ]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:52:50] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 95 130 120 126 149 113 117  93 111]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[8]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47071171 0.14965766 0.07636937 0.03947748 0.07932432 0.08537838
+  0.06481982 0.01222523 0.02205405]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:55:02] "POST /model/k_means HTTP/1.1" 200 -
+14.39.248.150 - - [18/Aug/2023 07:55:39] "GET /model/k_means HTTP/1.1" 405 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[140 114  94 107 126 120  88 122 143]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[3]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47028037 0.14901869 0.0724486  0.04011215 0.08172897 0.08518692
+  0.06662617 0.01178505 0.02282243]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:55:44] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 88 114 144  95 107 120 140 127 119]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47028037 0.14901869 0.0724486  0.04011215 0.08172897 0.08518692
+  0.06662617 0.01178505 0.02282243]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 07:56:43] "POST /model/k_means HTTP/1.1" 200 -
+198.235.24.74 - - [18/Aug/2023 08:15:34] "GET / HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[129 143 131 121 103  86 126  95 120]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47242718 0.1508835  0.06945631 0.04170874 0.08216505 0.08404854
+  0.06515534 0.01215534 0.02199029]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:16:35] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[138 101 113 125 122  95 111 129 120]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[6]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47071171 0.14965766 0.07636937 0.03947748 0.07932432 0.08537838
+  0.06481982 0.01222523 0.02205405]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:23:48] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[101 114 111  94 138 120 122 125 129]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[2]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47071171 0.14965766 0.07636937 0.03947748 0.07932432 0.08537838
+  0.06481982 0.01222523 0.02205405]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:29:20] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[126  91 125  87 103 120 128 121 153]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.472      0.14712621 0.0725534  0.03947573 0.08192233 0.08500971
+  0.06829126 0.01085437 0.02280583]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:29:30] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[146 102 101 123 121 137 127  75 122]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[3]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.46473984 0.14997561 0.07499187 0.03938211 0.07785366 0.09142276
+  0.06639837 0.01256911 0.02269106]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:39:10] "POST /model/k_means HTTP/1.1" 200 -
+[ 85 126 114 117 150 120 142 106  94]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[7]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47042453 0.14873585 0.07237736 0.03990566 0.0825     0.08464151
+  0.06725472 0.01114151 0.02303774]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:39:10] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[119 121 130 126 103 127 157  77  94]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[8]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.3412234  0.2022766  0.05909574 0.10551064 0.13397872 0.06387234
+  0.05275532 0.02554255 0.0156383 ]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:41:13] "POST /model/k_means HTTP/1.1" 200 -
+[102 136 121 119  92 100 127 128 129]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.34223913 0.20184783 0.0588913  0.10341304 0.13557609 0.06442391
+  0.0533587  0.02315217 0.01698913]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:41:14] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 90 121 147 103 122 140 123  89 119]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[7]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33459551 0.19883146 0.05729213 0.09869663 0.13720225 0.07495506
+  0.06531461 0.01632584 0.01667416]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:45:05] "POST /model/k_means HTTP/1.1" 200 -
+[124 144 119 121 114  90  95 103 144]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[7]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47293204 0.14993204 0.07020388 0.0411068  0.08226214 0.0828932
+  0.06531068 0.01334951 0.02199029]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:45:05] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[118 105  77 114  96 139 154 122 129]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33309375 0.19813542 0.0559375  0.09791667 0.13498958 0.07964583
+  0.06744792 0.01613542 0.016625  ]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:48:28] "POST /model/k_means HTTP/1.1" 200 -
+[107 141 122 101  96 126 119 129 113]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33222917 0.19733333 0.05476042 0.09697917 0.13471875 0.0816875
+  0.068625   0.01523958 0.01835417]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:48:28] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 79 142  84 120 106 156 104 123 140]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.46986792 0.1505     0.07051887 0.04037736 0.08226415 0.08532075
+  0.06807547 0.01164151 0.02145283]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:54:23] "POST /model/k_means HTTP/1.1" 200 -
+[ 78  92 149 122 118 130 141 104 120]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[1]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33315217 0.19973913 0.05527174 0.09876087 0.1351087  0.0785
+  0.06606522 0.0165     0.01681522]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 09:54:23] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[102 129  99 119  92 127 137 121 128]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[4]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.34223913 0.20184783 0.0588913  0.10341304 0.13557609 0.06442391
+  0.0533587  0.02315217 0.01698913]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 10:03:58] "POST /model/k_means HTTP/1.1" 200 -
+[ 97 121 103 133  75 126 121 131 147]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[0]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33960825 0.20006186 0.06071134 0.10272165 0.13781443 0.06468041
+  0.05378351 0.02647423 0.01405155]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 10:03:58] "POST /model/k_means HTTP/1.1" 200 -
+45.143.201.62 - - [18/Aug/2023 10:07:43] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.143.201.62 - - [18/Aug/2023 10:07:43] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[120 143 102  87 128  96 114 144 120]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[2]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47295098 0.15040196 0.06983333 0.04089216 0.08223529 0.08370588
+  0.0654902  0.01227451 0.02220588]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 10:11:09] "POST /model/k_means HTTP/1.1" 200 -
+[122  84 128 157 105 120 126 121  91]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[8]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33481319 0.19924176 0.05867033 0.09916484 0.13702198 0.07384615
+  0.06415385 0.01667033 0.01630769]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [18/Aug/2023 10:11:09] "POST /model/k_means HTTP/1.1" 200 -
+91.191.209.202 - - [18/Aug/2023 12:18:29] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+91.191.209.202 - - [18/Aug/2023 12:18:29] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+45.143.201.62 - - [18/Aug/2023 12:34:25] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.143.201.62 - - [18/Aug/2023 12:34:25] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+205.210.31.159 - - [18/Aug/2023 19:51:37] "GET / HTTP/1.0" 200 -
+185.100.87.136 - - [18/Aug/2023 20:13:22] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00')
+185.100.87.136 - - [18/Aug/2023 20:13:22] "\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00\x0c\x02\x00\x00\x00\x10MyCustomAssembly\x05\x01\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+207.154.240.169 - - [18/Aug/2023 21:38:29] code 400, message Bad request version ('À\x13À')
+207.154.240.169 - - [18/Aug/2023 21:38:29] "\x16\x03\x01\x00ê\x01\x00\x00æ\x03\x03\x07ÿÒ^Üä3XÀáæ\x1a©Â\x8f\x97F\x99\x90X\x09¬Ò;J·\x99v»¸9h ã8ÿØ+÷\x00pÜæ\x9eÏÉa\x02ï\x04YüÔ Ñ\x19\x86\x1e\x11\x16a^é\x85\x83\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À" HTTPStatus.BAD_REQUEST -
+207.154.240.169 - - [18/Aug/2023 21:38:29] "GET / HTTP/1.1" 200 -
+207.154.240.169 - - [18/Aug/2023 21:38:30] "GET / HTTP/1.1" 200 -
+207.154.240.169 - - [18/Aug/2023 21:38:30] "GET /.vscode/sftp.json HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:31] "GET /about HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:32] "GET /debug/default/view?panel=config HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:32] "GET /v2/_catalog HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:33] "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:33] "GET /server-status HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:34] "GET /login.action HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:34] "GET /_all_dbs HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:35] "GET /.DS_Store HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:35] "GET /.env HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:36] "GET /.git/config HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:36] "GET /s/33e28313e2432313e23313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:37] "GET /config.json HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:37] "GET /telescope/requests HTTP/1.1" 404 -
+207.154.240.169 - - [18/Aug/2023 21:38:38] "GET /?rest_route=/wp/v2/users/ HTTP/1.1" 200 -
+167.248.133.189 - - [18/Aug/2023 22:30:22] "GET / HTTP/1.1" 200 -
+167.248.133.189 - - [18/Aug/2023 22:30:33] code 505, message Invalid HTTP version (2.0)
+167.248.133.189 - - [18/Aug/2023 22:30:33] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.248.133.189 - - [18/Aug/2023 22:30:33] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.248.133.189 - - [18/Aug/2023 22:30:33] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.248.133.189 - - [18/Aug/2023 22:30:34] "GET /favicon.ico HTTP/1.1" 404 -
+162.216.150.140 - - [19/Aug/2023 00:48:59] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03?à\x10,"É\x08\x14jh\x05Ñ\x90ü\x8fÊ¾+Ç?\x9eÞG\x06×[æ#Åv\x14»\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À\'À#À\x13À')
+162.216.150.140 - - [19/Aug/2023 00:48:59] "\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03?à\x10,"É\x08\x14jh\x05Ñ\x90ü\x8fÊ¾+Ç?\x9eÞG\x06×[æ#Åv\x14»\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À" HTTPStatus.BAD_REQUEST -
+205.210.31.13 - - [19/Aug/2023 02:19:03] "GET / HTTP/1.1" 200 -
+162.142.125.14 - - [19/Aug/2023 05:09:34] code 400, message Bad request version ('À\x14À')
+162.142.125.14 - - [19/Aug/2023 05:09:34] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x07w~åú\x84À\x07¼KÖ\x12«\x0cw\x18'xþ\x8bû,Á4û<\x1d\x13ry4¼ ìH±\x18\x9b\x99Þw'U*\x11®`rBSÂ\x9eèYí\x10\x9d}\x1f²\x84\x11î©\x96\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.14 - - [19/Aug/2023 05:09:36] "GET / HTTP/1.1" 200 -
+162.142.125.14 - - [19/Aug/2023 05:09:36] "GET / HTTP/1.1" 200 -
+162.142.125.14 - - [19/Aug/2023 05:09:36] code 505, message Invalid HTTP version (2.0)
+162.142.125.14 - - [19/Aug/2023 05:09:36] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.14 - - [19/Aug/2023 05:09:37] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.14 - - [19/Aug/2023 05:09:37] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.14 - - [19/Aug/2023 05:09:37] "GET /favicon.ico HTTP/1.1" 404 -
+162.243.133.45 - - [19/Aug/2023 07:35:06] "GET /v2/ HTTP/1.1" 404 -
+188.166.87.67 - - [19/Aug/2023 07:57:30] "GET / HTTP/1.1" 200 -
+198.235.24.34 - - [19/Aug/2023 09:18:20] "GET / HTTP/1.1" 200 -
+157.230.10.0 - - [19/Aug/2023 09:32:45] code 400, message Bad request version ('À\x14À')
+157.230.10.0 - - [19/Aug/2023 09:32:45] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x8d\x96Þ#°)ºöö<öUE¼Ë\x00fb\x08´ \x15PVÒná\x0d\x14\x03J\x18\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+157.230.10.0 - - [19/Aug/2023 09:32:45] code 400, message Bad request version ('À\x14À')
+157.230.10.0 - - [19/Aug/2023 09:32:45] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Õ(e\x15Å\x9f¿8\x9bÖ¨JY'Ë\x050\x0e¾;\x1f}îQù¹/·Ú¼ák\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+157.230.10.0 - - [19/Aug/2023 09:32:46] "GET / HTTP/1.1" 200 -
+167.94.138.124 - - [19/Aug/2023 09:59:19] code 400, message Bad request version ('À\x14À')
+167.94.138.124 - - [19/Aug/2023 09:59:19] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03S\x06¦s¿F\x02µ°\x9bØL÷\x0c_\x15G¯CsLóx\x8f»9jòýe»Ò AW\x9bâÛ\x89 \x0fkÐ[Ó'ZYs\x04!µ}\x7f(º¦¦g½\x9eÆ\x8bµð\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.138.124 - - [19/Aug/2023 09:59:21] "GET / HTTP/1.1" 200 -
+167.94.138.124 - - [19/Aug/2023 09:59:21] "GET / HTTP/1.1" 200 -
+167.94.138.124 - - [19/Aug/2023 09:59:22] code 505, message Invalid HTTP version (2.0)
+167.94.138.124 - - [19/Aug/2023 09:59:22] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+167.94.138.124 - - [19/Aug/2023 09:59:23] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+167.94.138.124 - - [19/Aug/2023 09:59:24] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+167.94.138.124 - - [19/Aug/2023 09:59:24] "GET /favicon.ico HTTP/1.1" 404 -
+198.235.24.184 - - [19/Aug/2023 18:55:39] "GET / HTTP/1.1" 200 -
+167.94.146.60 - - [19/Aug/2023 20:06:47] code 400, message Bad request version ('À\x14À')
+167.94.146.60 - - [19/Aug/2023 20:06:47] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03hÆU\x80w\x942àÒ%Áj\x8bív»Ó\x94H÷¯\x086\x14\x12#\x7f\x8f:\x02.® <YÐq&'\x11ýí¹$OÈMÈV\x0cûÃ4\x0c\x1d¢ï¼,\\F¯CÁ@\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+167.94.146.60 - - [19/Aug/2023 20:06:48] "GET / HTTP/1.1" 200 -
+198.235.24.128 - - [19/Aug/2023 23:41:27] "GET / HTTP/1.0" 200 -
+45.33.87.154 - - [19/Aug/2023 23:46:11] "GET / HTTP/1.1" 200 -
+45.79.181.104 - - [19/Aug/2023 23:46:25] "GET / HTTP/1.1" 200 -
+78.128.114.70 - - [20/Aug/2023 00:10:19] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+78.128.114.70 - - [20/Aug/2023 00:10:19] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+92.63.196.78 - - [20/Aug/2023 03:24:23] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+92.63.196.78 - - [20/Aug/2023 03:24:23] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+198.235.24.56 - - [20/Aug/2023 05:18:21] "GET / HTTP/1.0" 200 -
+205.210.31.22 - - [20/Aug/2023 06:32:27] "GET / HTTP/1.1" 200 -
+54.215.56.83 - - [20/Aug/2023 07:26:56] "GET / HTTP/1.1" 200 -
+193.37.69.150 - - [20/Aug/2023 10:04:50] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+193.37.69.150 - - [20/Aug/2023 10:04:50] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:42:34] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00{\x01\x00\x00w\x03\x03h\x04\x02°B¦\x12Ç'+èÜ\x89ú\x9fE/75oìLwM+Ü¦háÌ\x97Á\x00\x00\x1aÀ/À+À\x11À\x07À\x13À")
+3.8.6.147 - - [20/Aug/2023 11:42:34] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03h\x04\x02°B¦\x12Ç'+èÜ\x89ú\x9fE/75oìLwM+Ü¦háÌ\x97Á\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:42:51] code 400, message Bad request version ('À\x14À')
+3.8.6.147 - - [20/Aug/2023 11:42:51] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03/y&Ä(èØÉÖê9ª7\x01cM\x07dú}Õ\x05\x16[ÂÃ\x0bÖA+\x18·\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:42:56] "GET /favicon.ico HTTP/1.1" 404 -
+3.8.6.147 - - [20/Aug/2023 11:43:00] code 400, message Bad request version ('À\x14À')
+3.8.6.147 - - [20/Aug/2023 11:43:00] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x02R\x19\x94\x92\x1dåF\x93\x9e~DÄlê"ð\x16\x88\x9fP_Ì\x04Cæ\\\x03@{c\x7f\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:43:05] "GET /manage/account/login HTTP/1.1" 404 -
+3.8.6.147 - - [20/Aug/2023 11:43:08] code 400, message Bad request version ('À\x14À')
+3.8.6.147 - - [20/Aug/2023 11:43:08] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x88rÁ<¶\x19¡ôJJx\x03CBT!Uø'\x1d«\x83Êð1±ÑÞ2Dh\x89\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:43:13] "GET /admin/index.html HTTP/1.1" 404 -
+3.8.6.147 - - [20/Aug/2023 11:43:16] code 400, message Bad request version ('À\x14À')
+3.8.6.147 - - [20/Aug/2023 11:43:16] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x94Z:m ÏNúF!ëò½\x8f\x1b\x9f<ú£N@ °N;®*µ³\x1aü\x97\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:43:21] "GET /index.html HTTP/1.1" 404 -
+3.8.6.147 - - [20/Aug/2023 11:43:24] code 400, message Bad request version ('À\x14À')
+3.8.6.147 - - [20/Aug/2023 11:43:24] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03ËZoÒé9ÇåØb\x10ÀgêJc\x84(]Æ\x81U1G¾Î\x1dþ"j$\x10\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:43:30] "GET /+CSCOE+/logon.html HTTP/1.1" 404 -
+3.8.6.147 - - [20/Aug/2023 11:43:33] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Á´èâ$\x94\x9cå\x83UµÆÆú,o¿.\x14'Ñ\x194¢¬ÿÒqÔÃn»\x00\x00\x1aÀ/À+À\x11À\x07À\x13À")
+3.8.6.147 - - [20/Aug/2023 11:43:33] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Á´èâ$\x94\x9cå\x83UµÆÆú,o¿.\x14'Ñ\x194¢¬ÿÒqÔÃn»\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:43:38] "GET /cgi-bin/login.cgi HTTP/1.1" 404 -
+3.8.6.147 - - [20/Aug/2023 11:43:41] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x96/àÏFûZø\x7f|Ó\x16<9\x96îØ\x8dÆÔQM³ºÁ`%|øS,A\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+3.8.6.147 - - [20/Aug/2023 11:43:41] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x96/àÏFûZø\x7f|Ó\x16<9\x96îØ\x8dÆÔQM³ºÁ`%|øS,A\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+3.8.6.147 - - [20/Aug/2023 11:43:46] "GET / HTTP/1.1" 200 -
+162.142.125.215 - - [20/Aug/2023 13:53:56] code 400, message Bad request version ('À\x14À')
+162.142.125.215 - - [20/Aug/2023 13:53:56] "\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03E\x97l\x9d®²X\x9eLu\x83â^@Ì\x15ß\x00áºEúÏ± Ù¿vµå\x8c\x04 ³^\x87¶yÇÐyr'7W\x97ØèKâk\x85jéxàëE\x15\x9bØô\x7f\x9as\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À" HTTPStatus.BAD_REQUEST -
+162.142.125.215 - - [20/Aug/2023 13:53:57] "GET / HTTP/1.1" 200 -
+162.142.125.215 - - [20/Aug/2023 13:53:58] "GET / HTTP/1.1" 200 -
+162.142.125.215 - - [20/Aug/2023 13:53:58] code 505, message Invalid HTTP version (2.0)
+162.142.125.215 - - [20/Aug/2023 13:53:58] "PRI * HTTP/2.0" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+162.142.125.215 - - [20/Aug/2023 13:54:10] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+162.142.125.215 - - [20/Aug/2023 13:54:11] "GET /swaggerui/favicon-16x16.png HTTP/1.1" 200 -
+162.142.125.215 - - [20/Aug/2023 13:54:11] "GET /favicon.ico HTTP/1.1" 404 -
+78.128.114.70 - - [20/Aug/2023 13:57:44] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+78.128.114.70 - - [20/Aug/2023 13:57:44] "\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+172.104.11.4 - - [20/Aug/2023 20:39:42] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+172.104.11.4 - - [20/Aug/2023 20:39:42] "\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x03iÙüEK*/V\x07\x06âN.²\x9aá\x9cdH\x19G·=º" HTTPStatus.BAD_REQUEST -
+185.170.144.3 - - [20/Aug/2023 20:53:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.170.144.3 - - [20/Aug/2023 20:53:10] "\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr" HTTPStatus.BAD_REQUEST -
+198.235.24.167 - - [21/Aug/2023 00:29:35] "GET / HTTP/1.0" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:50] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /favicon.ico HTTP/1.1" 404 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET / HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /swagger.json HTTP/1.1" 200 -
+1.243.213.183 - - [21/Aug/2023 00:53:51] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[ 96  88 120 101 120 145 144 114 126]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[3]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.47312871 0.15011881 0.06973267 0.04068317 0.0830495  0.08311881
+  0.06613861 0.01160396 0.02242574]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+1.243.213.183 - - [21/Aug/2023 00:53:57] "POST /model/k_means HTTP/1.1" 200 -
+14.39.248.150 - - [21/Aug/2023 01:00:49] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [21/Aug/2023 01:00:49] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+14.39.248.150 - - [21/Aug/2023 01:00:49] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+14.39.248.150 - - [21/Aug/2023 01:00:49] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+14.39.248.150 - - [21/Aug/2023 01:00:49] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+14.39.248.150 - - [21/Aug/2023 01:00:49] "GET /swagger.json HTTP/1.1" 200 -
+14.39.248.150 - - [21/Aug/2023 01:00:58] "GET / HTTP/1.1" 200 -
+14.39.248.150 - - [21/Aug/2023 01:00:58] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+14.39.248.150 - - [21/Aug/2023 01:00:58] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+14.39.248.150 - - [21/Aug/2023 01:00:58] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+14.39.248.150 - - [21/Aug/2023 01:00:58] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+14.39.248.150 - - [21/Aug/2023 01:00:58] "GET /swagger.json HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[120  85 126 113 149 106 122  95 138]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[7]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33268421 0.19738947 0.05489474 0.09746316 0.13496842 0.08150526
+  0.06821053 0.01530526 0.01750526]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [21/Aug/2023 01:01:42] "POST /model/k_means HTTP/1.1" 200 -
+[108 138 121 126 114 122 101 129  95]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[8]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33352632 0.19684211 0.05554737 0.09774737 0.13489474 0.08075789
+  0.06801053 0.01538947 0.0172    ]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [21/Aug/2023 01:01:42] "POST /model/k_means HTTP/1.1" 200 -
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+[140 122 110 135 126 120  95 113  93]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[6]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33268421 0.19738947 0.05489474 0.09746316 0.13496842 0.08150526
+  0.06821053 0.01530526 0.01750526]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [21/Aug/2023 01:02:56] "POST /model/k_means HTTP/1.1" 200 -
+[125 106 162 122  86 125 119  96 113]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[7]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+[[0.33223958 0.19727083 0.05545833 0.0970625  0.13553125 0.08135417
+  0.06821875 0.01546875 0.01732292]]
+/home/ubuntu/.local/lib/python3.10/site-packages/sklearn/base.py:464: UserWarning: X does not have valid feature names, but KMeans was fitted with feature names
+  warnings.warn(
+14.39.248.150 - - [21/Aug/2023 01:02:56] "POST /model/k_means HTTP/1.1" 200 -

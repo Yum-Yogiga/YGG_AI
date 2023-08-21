@@ -61,7 +61,7 @@ class modelKmeans(Resource):
         return jsonify(result)
 
 crawlInput = modelNS.model('url로 정보 크롤링', strict=True, model={
-    'urls': fields.List(fields.String,title='키워드',required=True)
+    'urls': fields.List(fields.String,title='모바일 네이버 식당주소',required=True)
 })
 
 @modelNS.route('/crawl')
@@ -76,4 +76,4 @@ class modelCrawl(Resource):
 
         return jsonify(result)
 
-app.run(debug=True)
+app.run(host='0.0.0.0')

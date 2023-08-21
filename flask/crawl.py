@@ -17,7 +17,7 @@ import json
 # gl2cc # 메뉴 가격
 
 # web driver setting
-service = Service(ChromeDriverManager(version="114.0.5735.90").install())
+service = Service(ChromeDriverManager().install())
 chromeOption = webdriver.ChromeOptions()
 chromeOption.add_experimental_option('detach', True)
 chromeOption.add_argument('headless')
