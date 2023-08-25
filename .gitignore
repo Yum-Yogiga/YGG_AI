@@ -18,3 +18,4 @@ dist/
 build/
 
 *.png
+nohup.out
