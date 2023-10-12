@@ -67,7 +67,7 @@ def get_restaurant(keywords):
     # similarity_rate_df.head()
 
     # 유사도 상위 5개 추천
-    indexes = similarity_rate_df['나의식당'].sort_values(ascending=False)[1:6]
+    indexes = similarity_rate_df['나의식당'].sort_values(ascending=False)[1:101]
 
     return indexes.index.tolist()
 
@@ -95,7 +95,7 @@ def kmeans(keywords):
 
     result = after_data[labels == km_model.predict([keywords])]['가게이름'].tolist()
 
-    result = random.sample(result,5)
+    result = random.sample(result,100)
 
     return result
 

@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import time
 import csv
 import json
+import numpy as np
 
 # Fc1rA # 가게 이름
 # LDgIH # 주소
@@ -23,6 +24,10 @@ chromeOption.add_experimental_option('detach', True)
 chromeOption.add_argument('headless')
 driver = webdriver.Chrome(service=service, options=chromeOption)
 
+# crawling 벤 방지
+seed = np.random.randint(100)
+np.random.seed(seed)
+time_sleep = np.random.randint(5)
 
 # 요소 존재 확인
 def check_exists(class_name):
@@ -66,10 +71,13 @@ def crawling(i_url):
         menus = []
 
         if check_exists('Fc1rA'):
+            time.sleep(time_sleep)
             name = soup.select('.Fc1rA')[0].text
         if check_exists('LDgIH'):
+            time.sleep(time_sleep)
             address = soup.select('.LDgIH')[0].text
         if check_exists('xlx7Q'):
+            time.sleep(time_sleep)
             tele = soup.select('.xlx7Q')[0].text
         # if check_exists('w9QyJ'):
         #     if check_exists('_UCia'):
@@ -81,12 +89,16 @@ def crawling(i_url):
         #     open_time = soup.select('time')[0].text
 
         if check_exists('MENyI'):
+            time.sleep(time_sleep)
             menu_names = soup.select('.MENyI')
         else:
+            time.sleep(time_sleep)
             menu_names = soup.select('.ihmWt')
         if check_exists('gl2cc'):
+            time.sleep(time_sleep)
             menu_price = soup.select('.gl2cc')
         else:
+            time.sleep(time_sleep)
             menu_price = soup.select('.awlpp')
 
         menunames = []
