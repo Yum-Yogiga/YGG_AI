@@ -110,7 +110,7 @@ def crawling(i_url):
         menunames = []
         menuprice = []
         menuimg = []
-        if check_exists('ZHqBk'):
+        if check_exists(driver, 'ZHqBk'):
             menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > div.lazyload-wrapper >img')
             for i in range(len(menu_names)):
                 menunames.append(menu_names[i].text)
@@ -147,5 +147,3 @@ def crawling(i_url):
     driver.quit()
 
     return rest_list
-
-crawling(['https://m.place.naver.com/restaurant/1759441377/home','https://m.place.naver.com/restaurant/1412069565/home'])
