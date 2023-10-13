@@ -23,10 +23,9 @@ service = Service(ChromeDriverManager().install())
 chromeOption = webdriver.ChromeOptions()
 chromeOption.add_experimental_option('detach', True)
 
-chromeOption.add_argument('headless')
+# chromeOption.add_argument('headless')
 #chromeOption.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36')
 # chromeOption.add_argument('headless')
-driver = webdriver.Chrome(service=service, options=chromeOption)
 
 # crawling 벤 방지
 seed = np.random.randint(100)
@@ -66,7 +65,7 @@ def crawling(i_url):
     for url in urls:
         print(url)
         driver.get(url)
-        time.sleep(10)
+        time.sleep(3)
 
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
@@ -114,6 +113,7 @@ def crawling(i_url):
             html = driver.page_source
             soup = BeautifulSoup(html, 'html.parser')
             menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > div.lazyload-wrapper >img')
+            print(menu_images)
             for i in range(len(menu_names)):
                 menunames.append(menu_names[i].text)
                 menuprice.append(menu_price[i].text)
