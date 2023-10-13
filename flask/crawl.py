@@ -22,14 +22,16 @@ import urllib.request
 service = Service(ChromeDriverManager().install())
 chromeOption = webdriver.ChromeOptions()
 chromeOption.add_experimental_option('detach', True)
+
 chromeOption.add_argument('headless')
 #chromeOption.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36')
+# chromeOption.add_argument('headless')
 driver = webdriver.Chrome(service=service, options=chromeOption)
 
 # crawling 벤 방지
 seed = np.random.randint(100)
 np.random.seed(seed)
-time_sleep = np.random.randint(5)
+time_sleep = np.random.randint(2)
 
 # 요소 존재 확인
 def check_exists(driver, class_name):
@@ -64,8 +66,7 @@ def crawling(i_url):
     for url in urls:
         print(url)
         driver.get(url)
-        print('cut')
-        time.sleep(0.3)
+        time.sleep(5)
 
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
@@ -105,14 +106,25 @@ def crawling(i_url):
         else:
             time.sleep(time_sleep)
             menu_price = soup.select('.awlpp')
-
+        menu_images = []
         menunames = []
         menuprice = []
+        menuimg = []
+        if check_exists('ZHqBk'):
+            menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > div.lazyload-wrapper >img')
+            for i in range(len(menu_names)):
+                menunames.append(menu_names[i].text)
+                menuprice.append(menu_price[i].text)
+                menuimg.append(menu_images[i]['src'])
+                menus.append([menu_names[i].text, menu_price[i].text])
+            print(menu_images)
+        else:
+            for i in range(len(menu_names)):
+                menunames.append(menu_names[i].text)
+                menuprice.append(menu_price[i].text)
+                menus.append([menu_names[i].text, menu_price[i].text])
+            print("else")
 
-        for i in range(len(menu_names)):
-            menunames.append(menu_names[i].text)
-            menuprice.append(menu_price[i].text)
-            menus.append([menu_names[i].text, menu_price[i].text])
 
         rest = {
             "name": name,
@@ -125,6 +137,7 @@ def crawling(i_url):
 
         rest["menuDtoList"] = menu
 
+        rest["menuimg"] = menuimg
         print(rest)
         rest_list.append(rest)
     # csvWriter.writerows(csv_list)
@@ -135,3 +148,4 @@ def crawling(i_url):
 
     return rest_list
 
+crawling(['https://m.place.naver.com/restaurant/1759441377/home','https://m.place.naver.com/restaurant/1412069565/home'])
