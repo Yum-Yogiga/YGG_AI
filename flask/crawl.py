@@ -66,7 +66,7 @@ def crawling(i_url):
     for url in urls:
         print(url)
         driver.get(url)
-        time.sleep(5)
+        time.sleep(10)
 
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
@@ -111,6 +111,8 @@ def crawling(i_url):
         menuprice = []
         menuimg = []
         if check_exists(driver, 'ZHqBk'):
+            html = driver.page_source
+            soup = BeautifulSoup(html, 'html.parser')
             menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > div.lazyload-wrapper >img')
             for i in range(len(menu_names)):
                 menunames.append(menu_names[i].text)
