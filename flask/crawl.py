@@ -9,6 +9,7 @@ import time
 import csv
 import json
 import numpy as np
+import urllib.request
 
 # Fc1rA # 가게 이름
 # LDgIH # 주소
@@ -22,6 +23,7 @@ service = Service(ChromeDriverManager().install())
 chromeOption = webdriver.ChromeOptions()
 chromeOption.add_experimental_option('detach', True)
 chromeOption.add_argument('headless')
+#chromeOption.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36')
 driver = webdriver.Chrome(service=service, options=chromeOption)
 
 # crawling 벤 방지
@@ -30,7 +32,7 @@ np.random.seed(seed)
 time_sleep = np.random.randint(5)
 
 # 요소 존재 확인
-def check_exists(class_name):
+def check_exists(driver, class_name):
     try:
         driver.find_element(by=By.CLASS_NAME, value=class_name)
     except NoSuchElementException:
@@ -42,7 +44,7 @@ def check_exists(class_name):
 #
 # csv_list = []
 
-
+# place_thumb::before # 메뉴 사진
 # Fc1rA # 가게 이름
 # LDgIH # 주소
 # xlx7Q # 전화번호
@@ -54,12 +56,15 @@ def check_exists(class_name):
 # awlpp # 메뉴가격2
 
 def crawling(i_url):
+    driver = webdriver.Chrome(service=service, options=chromeOption)
+    print('in')
     urls = i_url
     print(i_url)
     rest_list = []
     for url in urls:
         print(url)
         driver.get(url)
+        print('cut')
         time.sleep(0.3)
 
         html = driver.page_source
@@ -70,13 +75,13 @@ def crawling(i_url):
         open_time = ""
         menus = []
 
-        if check_exists('Fc1rA'):
+        if check_exists(driver,'Fc1rA'):
             time.sleep(time_sleep)
             name = soup.select('.Fc1rA')[0].text
-        if check_exists('LDgIH'):
+        if check_exists(driver, 'LDgIH'):
             time.sleep(time_sleep)
             address = soup.select('.LDgIH')[0].text
-        if check_exists('xlx7Q'):
+        if check_exists(driver, 'xlx7Q'):
             time.sleep(time_sleep)
             tele = soup.select('.xlx7Q')[0].text
         # if check_exists('w9QyJ'):
@@ -88,13 +93,13 @@ def crawling(i_url):
         #
         #     open_time = soup.select('time')[0].text
 
-        if check_exists('MENyI'):
+        if check_exists(driver,'MENyI'):
             time.sleep(time_sleep)
             menu_names = soup.select('.MENyI')
         else:
             time.sleep(time_sleep)
             menu_names = soup.select('.ihmWt')
-        if check_exists('gl2cc'):
+        if check_exists(driver, 'gl2cc'):
             time.sleep(time_sleep)
             menu_price = soup.select('.gl2cc')
         else:
