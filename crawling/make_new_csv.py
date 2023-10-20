@@ -1,7 +1,7 @@
 import csv
 
-input = open('test2.csv','r',encoding='utf-8')
-output = open('test3.csv','w',encoding='utf-8',newline='')
+input = open('review_count_postprocessing.csv','r',encoding='utf-8-sig')
+output = open('review_count_postprocessing_makenewcsv.csv','w',encoding='utf-8-sig',newline='')
 
 csvReader = csv.reader(input)
 csvWriter = csv.writer(output)

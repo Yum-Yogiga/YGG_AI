@@ -21,3 +21,5 @@ build/
 nohup.out
 
 testcrawl.py
+
+*.html

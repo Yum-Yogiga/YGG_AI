@@ -1,4 +1,5 @@
 from restaurant_info import crawl
+from crawl_copy import crawling
 import csv
 
 search_list = set()
@@ -21,21 +22,24 @@ dict_list = []
 search_list = list(search_list)
 
 # crawl
-dict_list = crawl(search_list)
+dict_list = crawling(search_list)
 
-print(dict_list)
-
-with open('restaurant_crawling.csv','w',encoding='utf-8',newline='') as f:
+with open('restaurant_crawling.csv','w',encoding='utf-8-sig',newline='') as f:
     w = csv.writer(f)
     # 추후에 필요시 tel 과 menu1 사이에 ,'openingHours' 추가
-    csv_list = [['name','address','tel','menu1','price','menu2','price','menu3','price','menu4','price']]
+    csv_list = [['name','address','tel','menu1','price','image1','menu2','price','image2','menu3','price','image3','menu4','price','image4']]
     for dict in dict_list:
         templist = [dict['name'],dict['address'],dict['tel']]
-        keys = list(dict['menuDtoList'].keys())
-        values = list(dict['menuDtoList'].values())
-        for i in range(len(keys)):
-            templist.append(keys[i])
-            templist.append(values[i])
+        names = list(dict['menuDtoList'].keys())
+        try:
+            prices ,images = zip(*dict['menuDtoList'].values())
+            prices = list(prices)
+        except:
+            prices, images = ["none","none","none","none"], ["none","none","none","none"]
+        for i in range(len(names)):
+            templist.append(names[i])
+            templist.append(prices[i])
+            templist.append(images[i])
         csv_list.append(templist)
 
     w.writerows(csv_list)

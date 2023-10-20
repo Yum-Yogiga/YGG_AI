@@ -1,8 +1,8 @@
 import csv
 
 # file setting
-input = open('test3.csv','r',encoding='utf-8')
-output = open('test4.csv','w',encoding='utf-8',newline='')
+input = open('review_count_postprocessing_makenewcsv.csv','r',encoding='utf-8')
+output = open('review_count_postprocessing_makenewcsv_percentage.csv','w',encoding='utf-8-sig',newline='')
 
 # csv reader/writer setting
 csvReader = csv.reader(input)

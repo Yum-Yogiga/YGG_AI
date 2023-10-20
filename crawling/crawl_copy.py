@@ -3,6 +3,9 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 from urllib.parse import quote_plus
 from bs4 import BeautifulSoup
 import time
@@ -30,7 +33,7 @@ chromeOption.add_experimental_option('detach', True)
 # crawling 벤 방지
 seed = np.random.randint(100)
 np.random.seed(seed)
-time_sleep = np.random.randint(2)
+time_sleep = np.random.randint(3)
 
 # 요소 존재 확인
 def check_exists(driver, class_name):
@@ -62,10 +65,13 @@ def crawling(i_url):
     urls = i_url
     print(i_url)
     rest_list = []
+
     for url in urls:
         print(url)
         driver.get(url)
-        time.sleep(3)
+        time.sleep(time_sleep)
+        driver.execute_script("window.scrollTo(0, 1000)")
+        time.sleep(1)
 
         html = driver.page_source
         soup = BeautifulSoup(html, 'html.parser')
@@ -76,13 +82,13 @@ def crawling(i_url):
         menus = []
 
         if check_exists(driver,'Fc1rA'):
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             name = soup.select('.Fc1rA')[0].text
         if check_exists(driver, 'LDgIH'):
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             address = soup.select('.LDgIH')[0].text
         if check_exists(driver, 'xlx7Q'):
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             tele = soup.select('.xlx7Q')[0].text
         # if check_exists('w9QyJ'):
         #     if check_exists('_UCia'):
@@ -94,39 +100,53 @@ def crawling(i_url):
         #     open_time = soup.select('time')[0].text
 
         if check_exists(driver,'MENyI'):
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             menu_names = soup.select('.MENyI')
         else:
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             menu_names = soup.select('.ihmWt')
         if check_exists(driver, 'gl2cc'):
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             menu_price = soup.select('.gl2cc')
         else:
-            time.sleep(time_sleep)
+            # time.sleep(time_sleep)
             menu_price = soup.select('.awlpp')
         menu_images = []
         menunames = []
         menuprice = []
         menuimg = []
+
+        # 메뉴 이미지가 있는 경우
         if check_exists(driver, 'ZHqBk'):
-            html = driver.page_source
-            soup = BeautifulSoup(html, 'html.parser')
-            menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > div.lazyload-wrapper >img')
+            # 메인에 비디오가 있는 경우
+            # if check_exists(driver, 'pzp-ui-dimmed'):
+            print("video")
+            menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb >img')
             print(menu_images)
             for i in range(len(menu_names)):
                 menunames.append(menu_names[i].text)
                 menuprice.append(menu_price[i].text)
                 menuimg.append(menu_images[i]['src'])
                 menus.append([menu_names[i].text, menu_price[i].text])
-            print(menu_images)
+
+            # else:
+            #     print("no video")
+            #     # menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > div.lazyload-wrapper > img')
+            #     menu_images = soup.select('a.Ozh8q > div.ZHqBk > div.place_thumb > img')
+            #     print(menu_images)
+            #     for i in range(len(menu_names)):
+            #         menunames.append(menu_names[i].text)
+            #         menuprice.append(menu_price[i].text)
+            #         menuimg.append(menu_images[i]['src'])
+            #         menus.append([menu_names[i].text, menu_price[i].text])
         else:
+            print("else")
             for i in range(len(menu_names)):
                 menunames.append(menu_names[i].text)
                 menuprice.append(menu_price[i].text)
                 menuimg.append("none")
                 menus.append([menu_names[i].text, menu_price[i].text])
-            print("else")
+
 
 
         rest = {
@@ -149,3 +169,9 @@ def crawling(i_url):
     driver.quit()
 
     return rest_list
+
+# video 있는 거
+# crawling(['https://m.place.naver.com/restaurant/1721729164/home','https://m.place.naver.com/restaurant/1759441377/home','https://m.place.naver.com/restaurant/1721729164/home'])
+
+# 비디오 없는거
+# crawling(['https://m.place.naver.com/restaurant/1759441377/home'])

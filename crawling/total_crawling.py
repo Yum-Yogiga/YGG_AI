@@ -12,7 +12,7 @@ import csv
 service = Service(ChromeDriverManager().install())
 chromeOption = webdriver.ChromeOptions()
 chromeOption.add_experimental_option('detach', True)
-chromeOption.add_argument('headless')
+# chromeOption.add_argument('headless')
 driver = webdriver.Chrome(service = service, options = chromeOption)
 
 # 버튼 요소 존재 확인
@@ -56,7 +56,7 @@ for sl in search_list:
 storeNum.write('\n'.join(list(item_list)))
 storeNum.close()
 
-f = open('test.csv', 'a',encoding='utf-8',newline='')
+f = open('review_count.csv', 'a',encoding='utf-8',newline='')
 csvWriter = csv.writer(f)
 csv_list =[['가게 이름',1,'인원 수',2,'인원 수',3,'인원 수',4,'인원 수',5,'인원 수',6,'인원 수',7,'인원 수',8,'인원 수',9,'인원 수',10,'인원 수','링크']]
 
