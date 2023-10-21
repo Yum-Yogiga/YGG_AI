@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.preprocessing import StandardScaler
 
-f = pd.read_csv('./data/total.csv')
+f = pd.read_csv('./data/리뷰점수.csv')
 
 data = f[['음식이 맛있어요','친절해요', '특별한 메뉴가 있어요','매장이 청결해요','재료가 신선해요',
           '가성비가 좋아요',	'양이 많아요',	'인테리어가 멋져요',	'혼밥하기 좋아요']]
