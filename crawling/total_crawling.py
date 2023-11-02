@@ -23,40 +23,45 @@ def check_exists(class_name='Tvx37'):
         return False
     return True
 
-location_list = ['홍대','연남','상수','합정']
-restaurant_list = ['한식','일식','중식','양식','분식','고깃집']
+# location_list = ['홍대','연남','상수','합정']
+# restaurant_list = ['한식','일식','중식','양식','분식','고깃집']
+#
+# # 검색어 리스트
+# search_list = []
+#
+# for ll in location_list:
+#     for rl in restaurant_list:
+#         search_string = ll + " " + rl
+#         search_list.append(search_string)
+#
+# item_list = set()
+#
+# storeNum = open('storeNumber.txt','w',encoding='utf-8')
+#
+# # naver map searching url
+# for sl in search_list:
+#     url = f'https://m.map.naver.com/search2/search.naver?query={quote_plus(sl)}&sm=hty&style=v5'
+#     # url = sl
+#     driver.get(url)
+#
+#     time.sleep(3)
+#
+#     temp_list = driver.find_elements(By.CSS_SELECTOR, '.a_item.a_item_distance._linkSiteview')
+#     for i in temp_list:
+#         storeNumber = i.get_attribute('data-cid')
+#         item_list.add(storeNumber) # store number
+#         # linktxt.write(f'https://m.place.naver.com/restaurant/{storeNumber}/review/visitor' + '\n')
+#         # count += 1
+# # string_list = map(str, list(item_list))
+# storeNum.write('\n'.join(list(item_list)))
+# storeNum.close()
 
-# 검색어 리스트
-search_list = []
+item_list = []
+storeNum = open('storeNumber.txt','r',encoding='utf-8')
+for it in storeNum:
+    item_list.append(it)
 
-for ll in location_list:
-    for rl in restaurant_list:
-        search_string = ll + " " + rl
-        search_list.append(search_string)
-
-item_list = set()
-
-storeNum = open('storeNumber.txt','w',encoding='utf-8')
-
-# naver map searching url
-for sl in search_list:
-    url = f'https://m.map.naver.com/search2/search.naver?query={quote_plus(sl)}&sm=hty&style=v5'
-    # url = sl
-    driver.get(url)
-
-    time.sleep(3)
-
-    temp_list = driver.find_elements(By.CSS_SELECTOR, '.a_item.a_item_distance._linkSiteview')
-    for i in temp_list:
-        storeNumber = i.get_attribute('data-cid')
-        item_list.add(storeNumber) # store number
-        # linktxt.write(f'https://m.place.naver.com/restaurant/{storeNumber}/review/visitor' + '\n')
-        # count += 1
-# string_list = map(str, list(item_list))
-storeNum.write('\n'.join(list(item_list)))
-storeNum.close()
-
-f = open('review_count.csv', 'a',encoding='utf-8',newline='')
+f = open('review_count.csv', 'w',encoding='utf-8-sig',newline='')
 csvWriter = csv.writer(f)
 csv_list =[['가게 이름',1,'인원 수',2,'인원 수',3,'인원 수',4,'인원 수',5,'인원 수',6,'인원 수',7,'인원 수',8,'인원 수',9,'인원 수',10,'인원 수','링크']]
 

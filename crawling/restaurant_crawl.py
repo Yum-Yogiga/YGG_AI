@@ -2,7 +2,7 @@ from restaurant_info import crawl
 from crawl_copy import crawling
 import csv
 
-search_list = set()
+search_list = []
 
 sl_file = open('storeNumber.txt','r',encoding='utf-8')
 
@@ -10,7 +10,7 @@ while True:
     temp = sl_file.readline()
     if not temp: break
     temp = f'https://m.place.naver.com/restaurant/{temp}/home'
-    search_list.add(temp)
+    search_list.append(temp)
 
 
 sl_file.close()
@@ -18,8 +18,8 @@ sl_file.close()
 # return list
 dict_list = []
 
-# set to list
-search_list = list(search_list)
+# # set to list
+# search_list = list(search_list)
 
 # crawl
 dict_list = crawling(search_list)
